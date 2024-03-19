@@ -2,35 +2,67 @@
 
 import random
 import matplotlib.pyplot as plt
+import mysql.connector
 
-def gerar_dados_luminosidade(num_dias):
-    leituras = []
-    for dia in range(num_dias):
+host = 'localhost'
+user = 'root'
+password = 'root'
+database = 'horus'
+port = 3306
+
+connection = mysql.connector.connect(
+    host=host,
+    user=user,
+    password=password,
+    database=database,
+    port=port)
+
+cursor = connection.cursor()
+
+if connection.is_connected():
+    print("Connected to MySQL server")
+
+# def gerar_dados_luminosidade(num_dias):
+#     leituras = []
+#     for dia in range(num_dias):
         
-        # gerar um número de 1 a 5 de forma aleatória
-        nublado = random.randint(1, 5)
+#         # gerar um número de 1 a 5 de forma aleatória
+#         nublado = random.randint(1, 5)
         
-        if nublado == 1:
-            for hora in range(24):
-                if hora in range(6, 18):
-                    leituras.append(random.uniform(100, 200))
-                elif hora in range(18, 20) or hora in range(4, 6):
-                    leituras.append(random.uniform(100, 150))
-                else:
-                    leituras.append(random.uniform(50, 100))  
-        else:
-            for hora in range(24):
-                if hora in range(6, 18):
-                    leituras.append(random.uniform(300, 400))
-                elif hora in range(18, 20) or hora in range(4, 6):
-                    leituras.append(random.uniform(250, 300))
-                else:
-                    leituras.append(random.uniform(100, 200))                
+#         if nublado == 1:
+#             for hora in range(24):
+#                 if hora in range(6, 18):
+#                     leituras.append(random.uniform(100, 200))
+#                 elif hora in range(18, 20) or hora in range(4, 6):
+#                     leituras.append(random.uniform(100, 150))
+#                 else:
+#                     leituras.append(random.uniform(50, 100))  
+#         else:
+#             for hora in range(24):
+#                 if hora in range(6, 18):
+#                     leituras.append(random.uniform(300, 400))
+#                 elif hora in range(18, 20) or hora in range(4, 6):
+#                     leituras.append(random.uniform(250, 300))
+#                 else:
+#                     leituras.append(random.uniform(100, 200))        
+#     return leituras
+
+# leituras_semanais = gerar_dados_luminosidade(7)
+
+
+def puxar_dados():
+    cursor.execute("SELECT * FROM luminosidade")
+    leituras = cursor.fetchall()
     return leituras
 
-leituras_semanais = gerar_dados_luminosidade(7)
-
 dias_da_semana = ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo']
+
+leituras = puxar_dados()
+
+leituras_semanais = []
+    
+for leitura in leituras:
+    leituras_semanais.append(leitura[2])
 
 # quero que tudo fique em um gráfico só, com as linhas de cada dia da semana
 fig, ax = plt.subplots(figsize=(10, 6))

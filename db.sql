@@ -14,3 +14,9 @@ create table luminosidade (
     dataMedicao varchar(255) not null,
     luminosidade float not null
 );
+
+create table potencia (
+    id int primary key auto_increment,
+    dataMedicao varchar(255) not null,
+    potencia float not null
+);

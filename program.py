@@ -2,6 +2,7 @@ import customtkinter as ctk
 import mysql.connector
 import os
 import sys
+import matplotlib.pyplot as plt
 from PIL import Image
 
 host = 'localhost'
@@ -11,11 +12,11 @@ database = 'horus'
 port = 3306
 
 connection = mysql.connector.connect(
-host=host,
-user=user,
-password=password,
-database=database,
-port=port)
+    host=host,
+    user=user,
+    password=password,
+    database=database,
+    port=port)
 
 cursor = connection.cursor()
 
@@ -43,6 +44,7 @@ class App(ctk.CTk):
             
         image_path = get_assets_path()
         self.home_image = ctk.CTkImage(Image.open(os.path.join(image_path, "home.png")).resize((20, 20)))    
+        self.grafico_image = ctk.CTkImage(Image.open(os.path.join(image_path, "grafico.png")).resize((20, 20)))      
             
         self.navegacao_frame = ctk.CTkFrame(self, corner_radius=0, width=150)
         self.navegacao_frame.grid(row=0, column=0, sticky="nsew")
@@ -65,19 +67,42 @@ class App(ctk.CTk):
         
         self.luminosidade_frame = ctk.CTkFrame(self, corner_radius=0, fg_color="transparent", width=450)
         
-        self.grafico_lumi = ctk.CTk
+        self.graf_luminosidade = ctk.CTkLabel(self.luminosidade_frame, text="Gráfico de Luminosidade", font=ctk.CTkFont(size=20, weight="bold"))
+        self.graf_luminosidade.pack(pady=20)
         
+        self.graf = ctk.CTkLabel(self.luminosidade_frame, text="", font=ctk.CTkFont(size=20, weight="bold"))
+        self.graf.pack(pady=20)
         
         
         self.selecionar_frame_por_nome("home")
         ctk.set_appearance_mode('light')
         
     def grafico_luminosidade(self):
-        select = "SELECT * FROM luminosidade"
-        cursor.execute(select)
-        result = cursor.fetchall()
+        cursor.execute("SELECT * FROM luminosidade")
+        leituras = cursor.fetchall()
+
+        leituras_semanais = []
+    
+        for leitura in leituras:
+            leituras_semanais.append(leitura[2])
+
+        dias_da_semana = ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo']
+
+        fig, ax = plt.subplots(figsize=(10, 6))
+        fig.suptitle('Luminosidade por Dia', fontsize=16)
+
+        for dia, leituras_dia in enumerate(zip(*[iter(leituras_semanais)]*24)):
+            horas = list(range(24))
+            ax.plot(horas, leituras_dia, marker='o', label=dias_da_semana[dia])
+            
+        ax.set_title('Luminosidade por Dia')
+        plt.legend()
+        plt.grid(True)
+        # salvar o gráfico como um arquivo na pasta assets
+        plt.savefig('assets/grafico.png')
         
-        print(result)
+        self.graf.configure(image=self.grafico_image)
+        
         
     def selecionar_frame_por_nome(self, name):
         self.home_button.configure(fg_color=("gray75", "gray25") if name == "home" else "transparent")
@@ -106,7 +131,6 @@ class App(ctk.CTk):
     def configuracao_button_event(self):
         self.selecionar_frame_por_nome("configuracao")
         
-            
 if __name__ == "__main__":         
     app = App()
     app.mainloop()

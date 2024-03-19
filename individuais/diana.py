@@ -3,7 +3,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Definindo os dados
 horas_do_dia = np.linspace(0, 24, 100)  # Horas do dia (de 0 a 24 horas
 potencia_maxima_NOCT = 400  # Potência máxima da placa solar em NOCT 
 percentual_captacao = 0.4 

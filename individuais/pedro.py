@@ -1,60 +1,79 @@
-# sensor de temperatura
+# sensor de temperatura externa
 
+import datetime
 import random
-from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 
-def gerar_temperaturas_epoca_do_ano(num_dias):
-    temperaturas = []
-    data_hora = datetime.now()
+def obter_estacao(mes):
+    if mes in [12, 1, 2]:
+        return "Verão"
+    elif mes in [3, 4, 5]:
+        return "Outono"
+    elif mes in [6, 7, 8]:
+        return "Inverno"
+    else:
+        return "Primavera"
 
-    for dia in range(num_dias):
-        mes = dia // 30 + 1
+def gerar_temperatura(estacao):
+    if estacao == "Verão":
+        return random.uniform(30, 35)
+    elif estacao == "Outono":
+        return random.uniform(25, 30)
+    elif estacao == "Inverno":
+        return random.uniform(20, 25)
+    else:
+        return random.uniform(25, 30)
 
-        for hora in range(24):
-            data_hora += timedelta(hours=1)
-            if mes in [12, 1, 2]:
-                temperatura = random.uniform(25, 30)
-            elif mes in [3, 4, 5]:
-                temperatura = random.uniform(20, 25)
-            elif mes in [6, 7, 8]:
-                temperatura = random.uniform(10, 25)
-            else:
-                temperatura = random.uniform(20, 25)
+dias_semana = {
+    "Monday": "Segunda-feira",
+    "Tuesday": "Terça-feira",
+    "Wednesday": "Quarta-feira",
+    "Thursday": "Quinta-feira",
+    "Friday": "Sexta-feira",
+    "Saturday": "Sábado",
+    "Sunday": "Domingo"
+}
 
-            temperaturas.append((data_hora, temperatura))
+temperaturas_por_dia = {dia: [] for dia in dias_semana.values()}
+data_atual = datetime.datetime.now()
+dias_simulacao = 7
+horario_inicio_pico = 9
+horario_fim_pico = 15
 
-    return temperaturas
+for dia in range(dias_simulacao):
+    dia_semana = dias_semana[data_atual.strftime("%A")]
+    
+    for hora in range(horario_inicio_pico, horario_fim_pico + 1):
+        for meia_hora in range(0, 60, 30):
+            data_hora = datetime.datetime(data_atual.year, data_atual.month, data_atual.day, hora, meia_hora)
+            estacao_atual = obter_estacao(data_hora.month)
+            temperatura = gerar_temperatura(estacao_atual)
+            temperaturas_por_dia[dia_semana].append(temperatura)
 
-temperaturas_semanais = gerar_temperaturas_epoca_do_ano(7)
+    data_atual += datetime.timedelta(days=1)
 
-dias_da_semana = ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo']
+for dia, temperaturas in temperaturas_por_dia.items():
+    print(f"Dia da semana: {dia}")
+    for idx, temp in enumerate(temperaturas, start=1):
+        print(f"  - Coleta {idx}: {temp:.2f}°C")
 
-for dia, temperaturas_dia in enumerate(zip(*[iter(temperaturas_semanais)]*24)):
-    print(f"Leituras para {dias_da_semana[dia]}:")
-    for hora, temperatura in enumerate(temperaturas_dia, start=1):
-        data, temp = temperatura
-        print(f"  - Data: {data.strftime('%d/%m/%Y %H:%M:%S')} - Temperatura: {temp:.2f}°C")
+plt.figure(figsize=(10, 6))
+for dia, temperaturas in temperaturas_por_dia.items():
+    plt.plot(range(1, len(temperaturas) + 1), temperaturas, label=dia)
+plt.title('Temperatura ao longo da semana')
+plt.xlabel('Período de coleta')
+plt.ylabel('Temperatura (°C)')
+plt.legend(loc='upper right')
+plt.grid(True)
+plt.show()
 
-    print()
+medias_temperatura = [sum(temperaturas) / len(temperaturas) for temperaturas in temperaturas_por_dia.values()]
+dias_semana_lista = list(dias_semana.values())
 
-# Plotagem dos gráficos
-medias_por_dia = []
-
-fig, axs = plt.subplots(7, 1, figsize=(10, 15), sharex=True)
-fig.suptitle('Temperaturas por Dia', fontsize=16)
-
-for dia, temperaturas_dia in enumerate(zip(*[iter(temperaturas_semanais)]*24)):
-    horas, temperaturas = zip(*temperaturas_dia)
-    axs[dia].plot(horas, temperaturas, marker='o')
-    axs[dia].set_title(dias_da_semana[dia])
-    axs[dia].set_ylabel('Temperatura (°C)')
-    axs[dia].tick_params(axis='x', rotation=45)
-    medias_por_dia.append(sum(temperaturas) / len(temperaturas))
-
-plt.figure(figsize=(10, 5))
-plt.bar(dias_da_semana, medias_por_dia, color='skyblue')
-plt.title('Média de Temperatura por Dia')
-plt.xlabel('Dia da Semana')
-plt.ylabel('Média de Temperatura (°C)')
+plt.figure(figsize=(10, 6))
+plt.bar(dias_semana_lista, medias_temperatura, color='skyblue')
+plt.title('Média de temperatura por dia da semana')
+plt.xlabel('Dia da semana')
+plt.ylabel('Temperatura média (°C)')
+plt.grid(axis='y')
 plt.show()
