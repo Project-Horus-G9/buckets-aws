@@ -23,7 +23,7 @@ cursor = connection.cursor()
 leituras = []
 for i in range(0,1):
   for i in range(0,24):
-    random_number = random.uniform(38, 40)
+    random_number = random.uniform(39, 40)
     leituras.append(random_number)
     
 data_inicial = time.time()
@@ -52,6 +52,8 @@ connection.close()
 # print(leituras)
 
 plt.plot(datas, voltagens)
+plt.xlabel('Hora')
+plt.ylabel('Voltagem (Volts)')
 plt.show()
 
 

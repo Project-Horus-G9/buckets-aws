@@ -42,10 +42,10 @@ if connection.is_connected():
 
     current_datetime = datetime.now()
     # colocar no lugar de 15 o valor da temperatura coletado pelo código do Pedro França
-    temperatura_1 = 15
-    for dias in range(90):
+    temp_base = 15
+    for dias in range(7):
         for hour in range(24): 
-            random_temperature = round(random.uniform(temperatura_1, temperatura_1 + 20), 2)
+            random_temperature = round(random.uniform(temp_base, temp_base + 20), 2)
             temperaturas.append(random_temperature)
 
             tabela = 'leitura_temperatura'

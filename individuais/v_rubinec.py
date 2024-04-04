@@ -64,7 +64,6 @@ leituras_semanais = []
 for leitura in leituras:
     leituras_semanais.append(leitura[2])
 
-# quero que tudo fique em um gráfico só, com as linhas de cada dia da semana
 fig, ax = plt.subplots(figsize=(10, 6))
 fig.suptitle('Luminosidade por Dia', fontsize=16)
 
@@ -78,3 +77,17 @@ plt.grid(True)
 plt.ylabel('Luminosidade (lux)')
 plt.xlabel('Hora do Dia')
 plt.show()
+
+# # quero que o gráfico seja de barra
+# fig, ax = plt.subplots(figsize=(10, 6))
+# fig.suptitle('Luminosidade por Dia', fontsize=16)
+
+# for dia, leituras_dia in enumerate(zip(*[iter(leituras_semanais)]*24)):
+#     horas = list(range(24))
+#     ax.bar(dias_da_semana[dia], sum(leituras_dia)/24)
+    
+# ax.set_title('Luminosidade por Dia')
+# plt.grid(True)
+# plt.ylabel('Luminosidade (lux)')
+# plt.xlabel('Dia da Semana')
+# plt.show()
