@@ -22,30 +22,30 @@ cursor = connection.cursor()
 if connection.is_connected():
     print("Connected to MySQL server")
 
-# def gerar_dados_luminosidade(num_dias):
-#     leituras = []
-#     for dia in range(num_dias):
+def gerar_dados_luminosidade(num_dias):
+    leituras = []
+    for dia in range(num_dias):
         
-#         # gerar um número de 1 a 5 de forma aleatória
-#         nublado = random.randint(1, 5)
+        # gerar um número de 1 a 5 de forma aleatória
+        nublado = random.randint(1, 5)
         
-#         if nublado == 1:
-#             for hora in range(24):
-#                 if hora in range(6, 18):
-#                     leituras.append(random.uniform(100, 200))
-#                 elif hora in range(18, 20) or hora in range(4, 6):
-#                     leituras.append(random.uniform(100, 150))
-#                 else:
-#                     leituras.append(random.uniform(50, 100))  
-#         else:
-#             for hora in range(24):
-#                 if hora in range(6, 18):
-#                     leituras.append(random.uniform(300, 400))
-#                 elif hora in range(18, 20) or hora in range(4, 6):
-#                     leituras.append(random.uniform(250, 300))
-#                 else:
-#                     leituras.append(random.uniform(100, 200))        
-#     return leituras
+        if nublado == 1:
+            for hora in range(24):
+                if hora in range(6, 18):
+                    leituras.append(random.uniform(100, 200))
+                elif hora in range(18, 20) or hora in range(4, 6):
+                    leituras.append(random.uniform(100, 150))
+                else:
+                    leituras.append(random.uniform(50, 100))  
+        else:
+            for hora in range(24):
+                if hora in range(6, 18):
+                    leituras.append(random.uniform(300, 400))
+                elif hora in range(18, 20) or hora in range(4, 6):
+                    leituras.append(random.uniform(250, 300))
+                else:
+                    leituras.append(random.uniform(100, 200))        
+    return leituras
 
 # leituras_semanais = gerar_dados_luminosidade(7)
 
