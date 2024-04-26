@@ -9,12 +9,12 @@ def gerar_dados(qtd_dias):
     # declarando as variáveis
     dado = {
         "data_hora": "",
-        "temp_ext": "",
-        "temp_int": "",
-        "tensao": "",
-        "uv": "",
-        "luminosidade": "",
-        "potencia": ""
+        "temp_ext": 0,
+        "temp_int": 0,
+        "tensao": 0,
+        "uv": 0,
+        "luminosidade": 0,
+        "potencia": 0
     }
     
     dados_coletados = []
@@ -100,23 +100,12 @@ def gerar_dados(qtd_dias):
             # coloca o conjunto de dados na lista
             dados_coletados.append(dado)
             
-            # limpa o dicionário
-            dado = {
-                "data_hora": "",
-                "temp_ext": "",
-                "temp_int": "",
-                "tensao": "",
-                "uv": "",
-                "luminosidade": "",
-                "potencia": ""
-            }
-            
     # retorna os dados coletados
     return dados_coletados
 
 def salvar_dados(dados, painel, setor):    
     # inserir no json o conjunto de dados no painel e setor especificado, caso não exista, criar
-    with open('data.json', 'r') as arquivo:
+    with open('data_raw.json', 'r') as arquivo:
         dados_json = json.load(arquivo)
         
     # verifica se o painel já existe
@@ -140,16 +129,9 @@ def salvar_dados(dados, painel, setor):
             painel_json["dados"] = dados
             
     # salva os dados no arquivo
-    with open('data.json', 'w') as arquivo:
+    with open('data_raw.json', 'w') as arquivo:
         # salvar informações no arquivo indetação de 4 espaços
         json.dump(dados_json, arquivo, indent=4)
-        
-    return True
-
-def limpar_dados():
-    # limpa os dados do arquivo
-    with open('data.json', 'w') as arquivo:
-        json.dump({"horus": []}, arquivo, indent=4)
         
     return True
 
@@ -166,4 +148,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # limpar_dados()

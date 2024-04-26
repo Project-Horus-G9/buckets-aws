@@ -1,0 +1,3370 @@
+{
+    "horus": [
+        {
+            "painel_id": 1,
+            "setor": "sul",
+            "dados": [
+                {
+                    "data_hora": "2024-04-17 00:00:00",
+                    "temp_ext": 23.42,
+                    "temp_int": 38.7,
+                    "tensao": 1.6,
+                    "luminosidade": 184.26,
+                    "razao_temp": 1.65,
+                    "energia_gerada": 11.86,
+                    "energia_esperada": 11.86
+                },
+                {
+                    "data_hora": "2024-04-17 00:30:00",
+                    "temp_ext": 23.86,
+                    "temp_int": 33.38,
+                    "tensao": 1.78,
+                    "luminosidade": 181.16,
+                    "razao_temp": 1.4,
+                    "energia_gerada": 4.19,
+                    "energia_esperada": 4.19
+                },
+                {
+                    "data_hora": "2024-04-17 01:00:00",
+                    "temp_ext": 24.64,
+                    "temp_int": 29.08,
+                    "tensao": 0.25,
+                    "luminosidade": 78.39,
+                    "razao_temp": 1.18,
+                    "energia_gerada": 11.45,
+                    "energia_esperada": 11.45
+                },
+                {
+                    "data_hora": "2024-04-17 01:30:00",
+                    "temp_ext": 22.37,
+                    "temp_int": 27.38,
+                    "tensao": 3.82,
+                    "luminosidade": 110.1,
+                    "razao_temp": 1.22,
+                    "energia_gerada": 2.82,
+                    "energia_esperada": 2.82
+                },
+                {
+                    "data_hora": "2024-04-17 02:00:00",
+                    "temp_ext": 23.43,
+                    "temp_int": 38.22,
+                    "tensao": 3.43,
+                    "luminosidade": 137.06,
+                    "razao_temp": 1.63,
+                    "energia_gerada": 10.51,
+                    "energia_esperada": 10.51
+                },
+                {
+                    "data_hora": "2024-04-17 02:30:00",
+                    "temp_ext": 21.89,
+                    "temp_int": 34.17,
+                    "tensao": 1.08,
+                    "luminosidade": 109.48,
+                    "razao_temp": 1.56,
+                    "energia_gerada": 5.66,
+                    "energia_esperada": 5.66
+                },
+                {
+                    "data_hora": "2024-04-17 03:00:00",
+                    "temp_ext": 22.33,
+                    "temp_int": 39.78,
+                    "tensao": 3.36,
+                    "luminosidade": 58.28,
+                    "razao_temp": 1.78,
+                    "energia_gerada": 10.69,
+                    "energia_esperada": 10.69
+                },
+                {
+                    "data_hora": "2024-04-17 03:30:00",
+                    "temp_ext": 22.21,
+                    "temp_int": 31.66,
+                    "tensao": 1.65,
+                    "luminosidade": 159.14,
+                    "razao_temp": 1.43,
+                    "energia_gerada": 7.59,
+                    "energia_esperada": 7.59
+                },
+                {
+                    "data_hora": "2024-04-17 04:00:00",
+                    "temp_ext": 23.58,
+                    "temp_int": 41.57,
+                    "tensao": 0.04,
+                    "luminosidade": 121.63,
+                    "razao_temp": 1.76,
+                    "energia_gerada": 10.74,
+                    "energia_esperada": 10.74
+                },
+                {
+                    "data_hora": "2024-04-17 04:30:00",
+                    "temp_ext": 22.94,
+                    "temp_int": 40.02,
+                    "tensao": 4.88,
+                    "luminosidade": 269.97,
+                    "razao_temp": 1.74,
+                    "energia_gerada": 6.6,
+                    "energia_esperada": 6.6
+                },
+                {
+                    "data_hora": "2024-04-17 05:00:00",
+                    "temp_ext": 20.02,
+                    "temp_int": 25.59,
+                    "tensao": 1.07,
+                    "luminosidade": 103.0,
+                    "razao_temp": 1.28,
+                    "energia_gerada": 5.86,
+                    "energia_esperada": 5.86
+                },
+                {
+                    "data_hora": "2024-04-17 05:30:00",
+                    "temp_ext": 21.58,
+                    "temp_int": 28.73,
+                    "tensao": 3.76,
+                    "luminosidade": 269.26,
+                    "razao_temp": 1.33,
+                    "energia_gerada": 2.36,
+                    "energia_esperada": 2.36
+                },
+                {
+                    "data_hora": "2024-04-17 06:00:00",
+                    "temp_ext": 22.03,
+                    "temp_int": 37.22,
+                    "tensao": 25.57,
+                    "luminosidade": 192.49,
+                    "razao_temp": 1.69,
+                    "energia_gerada": 82.6,
+                    "energia_esperada": 82.6
+                },
+                {
+                    "data_hora": "2024-04-17 06:30:00",
+                    "temp_ext": 23.09,
+                    "temp_int": 31.33,
+                    "tensao": 29.38,
+                    "luminosidade": 344.33,
+                    "razao_temp": 1.36,
+                    "energia_gerada": 65.71,
+                    "energia_esperada": 65.71
+                },
+                {
+                    "data_hora": "2024-04-17 07:00:00",
+                    "temp_ext": 20.12,
+                    "temp_int": 24.46,
+                    "tensao": 26.03,
+                    "luminosidade": 192.11,
+                    "razao_temp": 1.22,
+                    "energia_gerada": 103.74,
+                    "energia_esperada": 103.74
+                },
+                {
+                    "data_hora": "2024-04-17 07:30:00",
+                    "temp_ext": 22.08,
+                    "temp_int": 33.82,
+                    "tensao": 29.48,
+                    "luminosidade": 129.33,
+                    "razao_temp": 1.53,
+                    "energia_gerada": 117.43,
+                    "energia_esperada": 117.43
+                },
+                {
+                    "data_hora": "2024-04-17 08:00:00",
+                    "temp_ext": 23.83,
+                    "temp_int": 42.01,
+                    "tensao": 25.67,
+                    "luminosidade": 335.32,
+                    "razao_temp": 1.76,
+                    "energia_gerada": 32.56,
+                    "energia_esperada": 32.56
+                },
+                {
+                    "data_hora": "2024-04-17 08:30:00",
+                    "temp_ext": 21.2,
+                    "temp_int": 34.67,
+                    "tensao": 26.44,
+                    "luminosidade": 318.95,
+                    "razao_temp": 1.64,
+                    "energia_gerada": 36.92,
+                    "energia_esperada": 36.92
+                },
+                {
+                    "data_hora": "2024-04-17 09:00:00",
+                    "temp_ext": 24.9,
+                    "temp_int": 32.92,
+                    "tensao": 27.22,
+                    "luminosidade": 381.69,
+                    "razao_temp": 1.32,
+                    "energia_gerada": 103.27,
+                    "energia_esperada": 103.27
+                },
+                {
+                    "data_hora": "2024-04-17 09:30:00",
+                    "temp_ext": 21.01,
+                    "temp_int": 21.1,
+                    "tensao": 27.7,
+                    "luminosidade": 360.81,
+                    "razao_temp": 1.0,
+                    "energia_gerada": 67.74,
+                    "energia_esperada": 67.74
+                },
+                {
+                    "data_hora": "2024-04-17 10:00:00",
+                    "temp_ext": 27.05,
+                    "temp_int": 27.62,
+                    "tensao": 39.1,
+                    "luminosidade": 339.16,
+                    "razao_temp": 1.02,
+                    "energia_gerada": 73.62,
+                    "energia_esperada": 73.62
+                },
+                {
+                    "data_hora": "2024-04-17 10:30:00",
+                    "temp_ext": 28.33,
+                    "temp_int": 32.86,
+                    "tensao": 39.04,
+                    "luminosidade": 386.19,
+                    "razao_temp": 1.16,
+                    "energia_gerada": 2.52,
+                    "energia_esperada": 2.52
+                },
+                {
+                    "data_hora": "2024-04-17 11:00:00",
+                    "temp_ext": 25.83,
+                    "temp_int": 29.08,
+                    "tensao": 39.11,
+                    "luminosidade": 386.55,
+                    "razao_temp": 1.13,
+                    "energia_gerada": 50.9,
+                    "energia_esperada": 50.9
+                },
+                {
+                    "data_hora": "2024-04-17 11:30:00",
+                    "temp_ext": 28.54,
+                    "temp_int": 40.53,
+                    "tensao": 39.57,
+                    "luminosidade": 337.1,
+                    "razao_temp": 1.42,
+                    "energia_gerada": 123.81,
+                    "energia_esperada": 123.81
+                },
+                {
+                    "data_hora": "2024-04-17 12:00:00",
+                    "temp_ext": 28.27,
+                    "temp_int": 43.26,
+                    "tensao": 39.82,
+                    "luminosidade": 144.59,
+                    "razao_temp": 1.53,
+                    "energia_gerada": 93.93,
+                    "energia_esperada": 93.93
+                },
+                {
+                    "data_hora": "2024-04-17 12:30:00",
+                    "temp_ext": 29.77,
+                    "temp_int": 52.25,
+                    "tensao": 39.77,
+                    "luminosidade": 361.03,
+                    "razao_temp": 1.76,
+                    "energia_gerada": 47.45,
+                    "energia_esperada": 47.45
+                },
+                {
+                    "data_hora": "2024-04-17 13:00:00",
+                    "temp_ext": 25.74,
+                    "temp_int": 32.24,
+                    "tensao": 39.15,
+                    "luminosidade": 329.31,
+                    "razao_temp": 1.25,
+                    "energia_gerada": 68.74,
+                    "energia_esperada": 68.74
+                },
+                {
+                    "data_hora": "2024-04-17 13:30:00",
+                    "temp_ext": 25.27,
+                    "temp_int": 26.69,
+                    "tensao": 39.67,
+                    "luminosidade": 373.56,
+                    "razao_temp": 1.06,
+                    "energia_gerada": 4.65,
+                    "energia_esperada": 4.65
+                },
+                {
+                    "data_hora": "2024-04-17 14:00:00",
+                    "temp_ext": 28.08,
+                    "temp_int": 47.45,
+                    "tensao": 39.76,
+                    "luminosidade": 133.44,
+                    "razao_temp": 1.69,
+                    "energia_gerada": 107.76,
+                    "energia_esperada": 107.76
+                },
+                {
+                    "data_hora": "2024-04-17 14:30:00",
+                    "temp_ext": 28.14,
+                    "temp_int": 46.94,
+                    "tensao": 39.9,
+                    "luminosidade": 392.36,
+                    "razao_temp": 1.67,
+                    "energia_gerada": 127.09,
+                    "energia_esperada": 127.09
+                },
+                {
+                    "data_hora": "2024-04-17 15:00:00",
+                    "temp_ext": 28.61,
+                    "temp_int": 47.84,
+                    "tensao": 39.95,
+                    "luminosidade": 315.26,
+                    "razao_temp": 1.67,
+                    "energia_gerada": 8.62,
+                    "energia_esperada": 8.62
+                },
+                {
+                    "data_hora": "2024-04-17 15:30:00",
+                    "temp_ext": 27.49,
+                    "temp_int": 43.51,
+                    "tensao": 39.92,
+                    "luminosidade": 386.7,
+                    "razao_temp": 1.58,
+                    "energia_gerada": 89.85,
+                    "energia_esperada": 89.85
+                },
+                {
+                    "data_hora": "2024-04-17 16:00:00",
+                    "temp_ext": 22.02,
+                    "temp_int": 29.42,
+                    "tensao": 27.46,
+                    "luminosidade": 363.25,
+                    "razao_temp": 1.34,
+                    "energia_gerada": 6.45,
+                    "energia_esperada": 6.45
+                },
+                {
+                    "data_hora": "2024-04-17 16:30:00",
+                    "temp_ext": 21.89,
+                    "temp_int": 24.36,
+                    "tensao": 26.17,
+                    "luminosidade": 393.63,
+                    "razao_temp": 1.11,
+                    "energia_gerada": 47.66,
+                    "energia_esperada": 47.66
+                },
+                {
+                    "data_hora": "2024-04-17 17:00:00",
+                    "temp_ext": 22.43,
+                    "temp_int": 34.1,
+                    "tensao": 25.16,
+                    "luminosidade": 342.9,
+                    "razao_temp": 1.52,
+                    "energia_gerada": 10.31,
+                    "energia_esperada": 10.31
+                },
+                {
+                    "data_hora": "2024-04-17 17:30:00",
+                    "temp_ext": 23.7,
+                    "temp_int": 26.51,
+                    "tensao": 26.4,
+                    "luminosidade": 164.8,
+                    "razao_temp": 1.12,
+                    "energia_gerada": 15.66,
+                    "energia_esperada": 15.66
+                },
+                {
+                    "data_hora": "2024-04-17 18:00:00",
+                    "temp_ext": 22.61,
+                    "temp_int": 24.32,
+                    "tensao": 27.24,
+                    "luminosidade": 292.23,
+                    "razao_temp": 1.08,
+                    "energia_gerada": 78.12,
+                    "energia_esperada": 78.12
+                },
+                {
+                    "data_hora": "2024-04-17 18:30:00",
+                    "temp_ext": 20.81,
+                    "temp_int": 25.63,
+                    "tensao": 29.82,
+                    "luminosidade": 261.19,
+                    "razao_temp": 1.23,
+                    "energia_gerada": 25.27,
+                    "energia_esperada": 25.27
+                },
+                {
+                    "data_hora": "2024-04-17 19:00:00",
+                    "temp_ext": 20.03,
+                    "temp_int": 28.09,
+                    "tensao": 4.15,
+                    "luminosidade": 264.63,
+                    "razao_temp": 1.4,
+                    "energia_gerada": 4.34,
+                    "energia_esperada": 4.34
+                },
+                {
+                    "data_hora": "2024-04-17 19:30:00",
+                    "temp_ext": 23.82,
+                    "temp_int": 32.26,
+                    "tensao": 1.14,
+                    "luminosidade": 258.88,
+                    "razao_temp": 1.35,
+                    "energia_gerada": 9.5,
+                    "energia_esperada": 9.5
+                },
+                {
+                    "data_hora": "2024-04-17 20:00:00",
+                    "temp_ext": 24.8,
+                    "temp_int": 29.07,
+                    "tensao": 4.82,
+                    "luminosidade": 66.41,
+                    "razao_temp": 1.17,
+                    "energia_gerada": 7.8,
+                    "energia_esperada": 7.8
+                },
+                {
+                    "data_hora": "2024-04-17 20:30:00",
+                    "temp_ext": 24.97,
+                    "temp_int": 40.95,
+                    "tensao": 2.96,
+                    "luminosidade": 57.56,
+                    "razao_temp": 1.64,
+                    "energia_gerada": 8.13,
+                    "energia_esperada": 8.13
+                },
+                {
+                    "data_hora": "2024-04-17 21:00:00",
+                    "temp_ext": 22.88,
+                    "temp_int": 29.41,
+                    "tensao": 2.85,
+                    "luminosidade": 104.14,
+                    "razao_temp": 1.29,
+                    "energia_gerada": 8.37,
+                    "energia_esperada": 8.37
+                },
+                {
+                    "data_hora": "2024-04-17 21:30:00",
+                    "temp_ext": 21.73,
+                    "temp_int": 25.86,
+                    "tensao": 2.32,
+                    "luminosidade": 168.21,
+                    "razao_temp": 1.19,
+                    "energia_gerada": 2.3,
+                    "energia_esperada": 2.3
+                },
+                {
+                    "data_hora": "2024-04-17 22:00:00",
+                    "temp_ext": 23.62,
+                    "temp_int": 29.27,
+                    "tensao": 2.66,
+                    "luminosidade": 173.97,
+                    "razao_temp": 1.24,
+                    "energia_gerada": 7.96,
+                    "energia_esperada": 7.96
+                },
+                {
+                    "data_hora": "2024-04-17 22:30:00",
+                    "temp_ext": 21.67,
+                    "temp_int": 23.6,
+                    "tensao": 0.02,
+                    "luminosidade": 116.01,
+                    "razao_temp": 1.09,
+                    "energia_gerada": 9.37,
+                    "energia_esperada": 9.37
+                },
+                {
+                    "data_hora": "2024-04-17 23:00:00",
+                    "temp_ext": 22.78,
+                    "temp_int": 34.47,
+                    "tensao": 3.47,
+                    "luminosidade": 108.62,
+                    "razao_temp": 1.51,
+                    "energia_gerada": 0.48,
+                    "energia_esperada": 0.48
+                },
+                {
+                    "data_hora": "2024-04-17 23:30:00",
+                    "temp_ext": 20.41,
+                    "temp_int": 34.97,
+                    "tensao": 0.93,
+                    "luminosidade": 50.34,
+                    "razao_temp": 1.71,
+                    "energia_gerada": 1.43,
+                    "energia_esperada": 1.43
+                },
+                {
+                    "data_hora": "2024-04-18 00:00:00",
+                    "temp_ext": 24.29,
+                    "temp_int": 42.7,
+                    "tensao": 0.43,
+                    "luminosidade": 141.2,
+                    "razao_temp": 1.76,
+                    "energia_gerada": 10.1,
+                    "energia_esperada": 10.1
+                },
+                {
+                    "data_hora": "2024-04-18 00:30:00",
+                    "temp_ext": 21.41,
+                    "temp_int": 27.86,
+                    "tensao": 3.76,
+                    "luminosidade": 108.71,
+                    "razao_temp": 1.3,
+                    "energia_gerada": 8.34,
+                    "energia_esperada": 8.34
+                },
+                {
+                    "data_hora": "2024-04-18 01:00:00",
+                    "temp_ext": 22.01,
+                    "temp_int": 28.75,
+                    "tensao": 1.69,
+                    "luminosidade": 71.5,
+                    "razao_temp": 1.31,
+                    "energia_gerada": 4.3,
+                    "energia_esperada": 4.3
+                },
+                {
+                    "data_hora": "2024-04-18 01:30:00",
+                    "temp_ext": 22.45,
+                    "temp_int": 29.11,
+                    "tensao": 3.16,
+                    "luminosidade": 148.09,
+                    "razao_temp": 1.3,
+                    "energia_gerada": 10.3,
+                    "energia_esperada": 10.3
+                },
+                {
+                    "data_hora": "2024-04-18 02:00:00",
+                    "temp_ext": 24.63,
+                    "temp_int": 32.58,
+                    "tensao": 2.34,
+                    "luminosidade": 145.36,
+                    "razao_temp": 1.32,
+                    "energia_gerada": 9.15,
+                    "energia_esperada": 9.15
+                },
+                {
+                    "data_hora": "2024-04-18 02:30:00",
+                    "temp_ext": 20.43,
+                    "temp_int": 25.89,
+                    "tensao": 4.17,
+                    "luminosidade": 134.66,
+                    "razao_temp": 1.27,
+                    "energia_gerada": 8.25,
+                    "energia_esperada": 8.25
+                },
+                {
+                    "data_hora": "2024-04-18 03:00:00",
+                    "temp_ext": 22.09,
+                    "temp_int": 31.7,
+                    "tensao": 4.01,
+                    "luminosidade": 125.69,
+                    "razao_temp": 1.44,
+                    "energia_gerada": 3.35,
+                    "energia_esperada": 3.35
+                },
+                {
+                    "data_hora": "2024-04-18 03:30:00",
+                    "temp_ext": 20.58,
+                    "temp_int": 33.59,
+                    "tensao": 3.9,
+                    "luminosidade": 130.3,
+                    "razao_temp": 1.63,
+                    "energia_gerada": 10.1,
+                    "energia_esperada": 10.1
+                },
+                {
+                    "data_hora": "2024-04-18 04:00:00",
+                    "temp_ext": 21.6,
+                    "temp_int": 25.84,
+                    "tensao": 0.07,
+                    "luminosidade": 295.64,
+                    "razao_temp": 1.2,
+                    "energia_gerada": 9.62,
+                    "energia_esperada": 9.62
+                },
+                {
+                    "data_hora": "2024-04-18 04:30:00",
+                    "temp_ext": 24.01,
+                    "temp_int": 41.77,
+                    "tensao": 2.84,
+                    "luminosidade": 299.12,
+                    "razao_temp": 1.74,
+                    "energia_gerada": 5.34,
+                    "energia_esperada": 5.34
+                },
+                {
+                    "data_hora": "2024-04-18 05:00:00",
+                    "temp_ext": 20.85,
+                    "temp_int": 38.89,
+                    "tensao": 3.67,
+                    "luminosidade": 125.1,
+                    "razao_temp": 1.87,
+                    "energia_gerada": 2.47,
+                    "energia_esperada": 2.47
+                },
+                {
+                    "data_hora": "2024-04-18 05:30:00",
+                    "temp_ext": 23.95,
+                    "temp_int": 34.17,
+                    "tensao": 3.01,
+                    "luminosidade": 254.82,
+                    "razao_temp": 1.43,
+                    "energia_gerada": 5.93,
+                    "energia_esperada": 5.93
+                },
+                {
+                    "data_hora": "2024-04-18 06:00:00",
+                    "temp_ext": 21.79,
+                    "temp_int": 37.67,
+                    "tensao": 29.1,
+                    "luminosidade": 357.52,
+                    "razao_temp": 1.73,
+                    "energia_gerada": 62.62,
+                    "energia_esperada": 62.62
+                },
+                {
+                    "data_hora": "2024-04-18 06:30:00",
+                    "temp_ext": 21.01,
+                    "temp_int": 21.77,
+                    "tensao": 25.81,
+                    "luminosidade": 312.92,
+                    "razao_temp": 1.04,
+                    "energia_gerada": 1.52,
+                    "energia_esperada": 1.52
+                },
+                {
+                    "data_hora": "2024-04-18 07:00:00",
+                    "temp_ext": 20.04,
+                    "temp_int": 22.22,
+                    "tensao": 26.85,
+                    "luminosidade": 395.75,
+                    "razao_temp": 1.11,
+                    "energia_gerada": 5.37,
+                    "energia_esperada": 5.37
+                },
+                {
+                    "data_hora": "2024-04-18 07:30:00",
+                    "temp_ext": 24.18,
+                    "temp_int": 42.95,
+                    "tensao": 24.72,
+                    "luminosidade": 359.31,
+                    "razao_temp": 1.78,
+                    "energia_gerada": 23.12,
+                    "energia_esperada": 23.12
+                },
+                {
+                    "data_hora": "2024-04-18 08:00:00",
+                    "temp_ext": 20.73,
+                    "temp_int": 32.4,
+                    "tensao": 24.65,
+                    "luminosidade": 348.23,
+                    "razao_temp": 1.56,
+                    "energia_gerada": 103.26,
+                    "energia_esperada": 103.26
+                },
+                {
+                    "data_hora": "2024-04-18 08:30:00",
+                    "temp_ext": 23.84,
+                    "temp_int": 34.6,
+                    "tensao": 24.72,
+                    "luminosidade": 390.91,
+                    "razao_temp": 1.45,
+                    "energia_gerada": 45.18,
+                    "energia_esperada": 45.18
+                },
+                {
+                    "data_hora": "2024-04-18 09:00:00",
+                    "temp_ext": 24.16,
+                    "temp_int": 39.67,
+                    "tensao": 29.48,
+                    "luminosidade": 151.49,
+                    "razao_temp": 1.64,
+                    "energia_gerada": 60.86,
+                    "energia_esperada": 60.86
+                },
+                {
+                    "data_hora": "2024-04-18 09:30:00",
+                    "temp_ext": 22.45,
+                    "temp_int": 40.67,
+                    "tensao": 24.42,
+                    "luminosidade": 329.19,
+                    "razao_temp": 1.81,
+                    "energia_gerada": 34.82,
+                    "energia_esperada": 34.82
+                },
+                {
+                    "data_hora": "2024-04-18 10:00:00",
+                    "temp_ext": 28.62,
+                    "temp_int": 31.5,
+                    "tensao": 39.15,
+                    "luminosidade": 359.53,
+                    "razao_temp": 1.1,
+                    "energia_gerada": 127.94,
+                    "energia_esperada": 127.94
+                },
+                {
+                    "data_hora": "2024-04-18 10:30:00",
+                    "temp_ext": 26.26,
+                    "temp_int": 41.27,
+                    "tensao": 39.03,
+                    "luminosidade": 113.6,
+                    "razao_temp": 1.57,
+                    "energia_gerada": 3.86,
+                    "energia_esperada": 3.86
+                },
+                {
+                    "data_hora": "2024-04-18 11:00:00",
+                    "temp_ext": 27.78,
+                    "temp_int": 33.07,
+                    "tensao": 39.41,
+                    "luminosidade": 345.16,
+                    "razao_temp": 1.19,
+                    "energia_gerada": 0.11,
+                    "energia_esperada": 0.11
+                },
+                {
+                    "data_hora": "2024-04-18 11:30:00",
+                    "temp_ext": 27.39,
+                    "temp_int": 28.58,
+                    "tensao": 39.76,
+                    "luminosidade": 311.74,
+                    "razao_temp": 1.04,
+                    "energia_gerada": 71.98,
+                    "energia_esperada": 71.98
+                },
+                {
+                    "data_hora": "2024-04-18 12:00:00",
+                    "temp_ext": 25.18,
+                    "temp_int": 34.11,
+                    "tensao": 39.88,
+                    "luminosidade": 352.16,
+                    "razao_temp": 1.35,
+                    "energia_gerada": 5.35,
+                    "energia_esperada": 5.35
+                },
+                {
+                    "data_hora": "2024-04-18 12:30:00",
+                    "temp_ext": 28.8,
+                    "temp_int": 43.99,
+                    "tensao": 39.65,
+                    "luminosidade": 355.98,
+                    "razao_temp": 1.53,
+                    "energia_gerada": 114.9,
+                    "energia_esperada": 114.9
+                },
+                {
+                    "data_hora": "2024-04-18 13:00:00",
+                    "temp_ext": 26.24,
+                    "temp_int": 44.02,
+                    "tensao": 39.87,
+                    "luminosidade": 307.67,
+                    "razao_temp": 1.68,
+                    "energia_gerada": 111.11,
+                    "energia_esperada": 111.11
+                },
+                {
+                    "data_hora": "2024-04-18 13:30:00",
+                    "temp_ext": 29.4,
+                    "temp_int": 49.02,
+                    "tensao": 39.57,
+                    "luminosidade": 145.38,
+                    "razao_temp": 1.67,
+                    "energia_gerada": 12.29,
+                    "energia_esperada": 12.29
+                },
+                {
+                    "data_hora": "2024-04-18 14:00:00",
+                    "temp_ext": 26.37,
+                    "temp_int": 28.49,
+                    "tensao": 39.56,
+                    "luminosidade": 389.68,
+                    "razao_temp": 1.08,
+                    "energia_gerada": 43.51,
+                    "energia_esperada": 43.51
+                },
+                {
+                    "data_hora": "2024-04-18 14:30:00",
+                    "temp_ext": 27.83,
+                    "temp_int": 43.67,
+                    "tensao": 39.42,
+                    "luminosidade": 195.48,
+                    "razao_temp": 1.57,
+                    "energia_gerada": 70.72,
+                    "energia_esperada": 70.72
+                },
+                {
+                    "data_hora": "2024-04-18 15:00:00",
+                    "temp_ext": 26.82,
+                    "temp_int": 33.15,
+                    "tensao": 39.67,
+                    "luminosidade": 121.12,
+                    "razao_temp": 1.24,
+                    "energia_gerada": 6.39,
+                    "energia_esperada": 6.39
+                },
+                {
+                    "data_hora": "2024-04-18 15:30:00",
+                    "temp_ext": 27.91,
+                    "temp_int": 47.54,
+                    "tensao": 39.57,
+                    "luminosidade": 344.32,
+                    "razao_temp": 1.7,
+                    "energia_gerada": 64.75,
+                    "energia_esperada": 64.75
+                },
+                {
+                    "data_hora": "2024-04-18 16:00:00",
+                    "temp_ext": 20.65,
+                    "temp_int": 37.57,
+                    "tensao": 28.76,
+                    "luminosidade": 339.28,
+                    "razao_temp": 1.82,
+                    "energia_gerada": 5.82,
+                    "energia_esperada": 5.82
+                },
+                {
+                    "data_hora": "2024-04-18 16:30:00",
+                    "temp_ext": 20.38,
+                    "temp_int": 21.99,
+                    "tensao": 25.46,
+                    "luminosidade": 335.93,
+                    "razao_temp": 1.08,
+                    "energia_gerada": 88.01,
+                    "energia_esperada": 88.01
+                },
+                {
+                    "data_hora": "2024-04-18 17:00:00",
+                    "temp_ext": 20.3,
+                    "temp_int": 27.0,
+                    "tensao": 26.98,
+                    "luminosidade": 335.72,
+                    "razao_temp": 1.33,
+                    "energia_gerada": 22.83,
+                    "energia_esperada": 22.83
+                },
+                {
+                    "data_hora": "2024-04-18 17:30:00",
+                    "temp_ext": 24.58,
+                    "temp_int": 32.7,
+                    "tensao": 26.32,
+                    "luminosidade": 334.66,
+                    "razao_temp": 1.33,
+                    "energia_gerada": 16.67,
+                    "energia_esperada": 16.67
+                },
+                {
+                    "data_hora": "2024-04-18 18:00:00",
+                    "temp_ext": 21.48,
+                    "temp_int": 25.19,
+                    "tensao": 25.94,
+                    "luminosidade": 282.27,
+                    "razao_temp": 1.17,
+                    "energia_gerada": 80.38,
+                    "energia_esperada": 80.38
+                },
+                {
+                    "data_hora": "2024-04-18 18:30:00",
+                    "temp_ext": 21.85,
+                    "temp_int": 30.8,
+                    "tensao": 27.6,
+                    "luminosidade": 266.97,
+                    "razao_temp": 1.41,
+                    "energia_gerada": 81.7,
+                    "energia_esperada": 81.7
+                },
+                {
+                    "data_hora": "2024-04-18 19:00:00",
+                    "temp_ext": 23.23,
+                    "temp_int": 35.65,
+                    "tensao": 2.19,
+                    "luminosidade": 101.35,
+                    "razao_temp": 1.53,
+                    "energia_gerada": 3.31,
+                    "energia_esperada": 3.31
+                },
+                {
+                    "data_hora": "2024-04-18 19:30:00",
+                    "temp_ext": 23.51,
+                    "temp_int": 24.74,
+                    "tensao": 4.14,
+                    "luminosidade": 251.89,
+                    "razao_temp": 1.05,
+                    "energia_gerada": 10.02,
+                    "energia_esperada": 10.02
+                },
+                {
+                    "data_hora": "2024-04-18 20:00:00",
+                    "temp_ext": 24.5,
+                    "temp_int": 37.42,
+                    "tensao": 0.86,
+                    "luminosidade": 184.63,
+                    "razao_temp": 1.53,
+                    "energia_gerada": 5.09,
+                    "energia_esperada": 5.09
+                },
+                {
+                    "data_hora": "2024-04-18 20:30:00",
+                    "temp_ext": 21.67,
+                    "temp_int": 32.44,
+                    "tensao": 4.44,
+                    "luminosidade": 105.38,
+                    "razao_temp": 1.5,
+                    "energia_gerada": 3.59,
+                    "energia_esperada": 3.59
+                },
+                {
+                    "data_hora": "2024-04-18 21:00:00",
+                    "temp_ext": 23.84,
+                    "temp_int": 40.75,
+                    "tensao": 1.48,
+                    "luminosidade": 112.3,
+                    "razao_temp": 1.71,
+                    "energia_gerada": 9.78,
+                    "energia_esperada": 9.78
+                },
+                {
+                    "data_hora": "2024-04-18 21:30:00",
+                    "temp_ext": 20.07,
+                    "temp_int": 30.3,
+                    "tensao": 3.28,
+                    "luminosidade": 121.07,
+                    "razao_temp": 1.51,
+                    "energia_gerada": 3.3,
+                    "energia_esperada": 3.3
+                },
+                {
+                    "data_hora": "2024-04-18 22:00:00",
+                    "temp_ext": 21.14,
+                    "temp_int": 36.28,
+                    "tensao": 3.61,
+                    "luminosidade": 162.6,
+                    "razao_temp": 1.72,
+                    "energia_gerada": 10.41,
+                    "energia_esperada": 10.41
+                },
+                {
+                    "data_hora": "2024-04-18 22:30:00",
+                    "temp_ext": 20.32,
+                    "temp_int": 25.04,
+                    "tensao": 4.84,
+                    "luminosidade": 175.59,
+                    "razao_temp": 1.23,
+                    "energia_gerada": 3.46,
+                    "energia_esperada": 3.46
+                },
+                {
+                    "data_hora": "2024-04-18 23:00:00",
+                    "temp_ext": 23.32,
+                    "temp_int": 28.64,
+                    "tensao": 2.62,
+                    "luminosidade": 119.27,
+                    "razao_temp": 1.23,
+                    "energia_gerada": 2.38,
+                    "energia_esperada": 2.38
+                },
+                {
+                    "data_hora": "2024-04-18 23:30:00",
+                    "temp_ext": 24.02,
+                    "temp_int": 39.82,
+                    "tensao": 2.06,
+                    "luminosidade": 75.11,
+                    "razao_temp": 1.66,
+                    "energia_gerada": 7.06,
+                    "energia_esperada": 7.06
+                },
+                {
+                    "data_hora": "2024-04-19 00:00:00",
+                    "temp_ext": 23.36,
+                    "temp_int": 25.44,
+                    "tensao": 3.22,
+                    "luminosidade": 106.66,
+                    "razao_temp": 1.09,
+                    "energia_gerada": 9.88,
+                    "energia_esperada": 9.88
+                },
+                {
+                    "data_hora": "2024-04-19 00:30:00",
+                    "temp_ext": 21.0,
+                    "temp_int": 23.68,
+                    "tensao": 4.56,
+                    "luminosidade": 116.47,
+                    "razao_temp": 1.13,
+                    "energia_gerada": 1.38,
+                    "energia_esperada": 1.38
+                },
+                {
+                    "data_hora": "2024-04-19 01:00:00",
+                    "temp_ext": 22.61,
+                    "temp_int": 37.23,
+                    "tensao": 0.5,
+                    "luminosidade": 171.6,
+                    "razao_temp": 1.65,
+                    "energia_gerada": 5.11,
+                    "energia_esperada": 5.11
+                },
+                {
+                    "data_hora": "2024-04-19 01:30:00",
+                    "temp_ext": 24.68,
+                    "temp_int": 37.84,
+                    "tensao": 3.13,
+                    "luminosidade": 55.75,
+                    "razao_temp": 1.53,
+                    "energia_gerada": 6.26,
+                    "energia_esperada": 6.26
+                },
+                {
+                    "data_hora": "2024-04-19 02:00:00",
+                    "temp_ext": 23.08,
+                    "temp_int": 25.14,
+                    "tensao": 3.33,
+                    "luminosidade": 128.41,
+                    "razao_temp": 1.09,
+                    "energia_gerada": 0.54,
+                    "energia_esperada": 0.54
+                },
+                {
+                    "data_hora": "2024-04-19 02:30:00",
+                    "temp_ext": 23.95,
+                    "temp_int": 42.8,
+                    "tensao": 4.49,
+                    "luminosidade": 158.21,
+                    "razao_temp": 1.79,
+                    "energia_gerada": 12.62,
+                    "energia_esperada": 12.62
+                },
+                {
+                    "data_hora": "2024-04-19 03:00:00",
+                    "temp_ext": 24.0,
+                    "temp_int": 33.22,
+                    "tensao": 2.15,
+                    "luminosidade": 163.03,
+                    "razao_temp": 1.38,
+                    "energia_gerada": 9.09,
+                    "energia_esperada": 9.09
+                },
+                {
+                    "data_hora": "2024-04-19 03:30:00",
+                    "temp_ext": 22.12,
+                    "temp_int": 32.42,
+                    "tensao": 4.69,
+                    "luminosidade": 163.28,
+                    "razao_temp": 1.47,
+                    "energia_gerada": 1.63,
+                    "energia_esperada": 1.63
+                },
+                {
+                    "data_hora": "2024-04-19 04:00:00",
+                    "temp_ext": 21.04,
+                    "temp_int": 27.72,
+                    "tensao": 1.93,
+                    "luminosidade": 298.95,
+                    "razao_temp": 1.32,
+                    "energia_gerada": 8.5,
+                    "energia_esperada": 8.5
+                },
+                {
+                    "data_hora": "2024-04-19 04:30:00",
+                    "temp_ext": 24.79,
+                    "temp_int": 25.47,
+                    "tensao": 4.03,
+                    "luminosidade": 261.11,
+                    "razao_temp": 1.03,
+                    "energia_gerada": 12.36,
+                    "energia_esperada": 12.36
+                },
+                {
+                    "data_hora": "2024-04-19 05:00:00",
+                    "temp_ext": 22.92,
+                    "temp_int": 32.56,
+                    "tensao": 3.09,
+                    "luminosidade": 126.35,
+                    "razao_temp": 1.42,
+                    "energia_gerada": 2.79,
+                    "energia_esperada": 2.79
+                },
+                {
+                    "data_hora": "2024-04-19 05:30:00",
+                    "temp_ext": 21.99,
+                    "temp_int": 36.15,
+                    "tensao": 4.17,
+                    "luminosidade": 289.98,
+                    "razao_temp": 1.64,
+                    "energia_gerada": 11.93,
+                    "energia_esperada": 11.93
+                },
+                {
+                    "data_hora": "2024-04-19 06:00:00",
+                    "temp_ext": 23.72,
+                    "temp_int": 31.93,
+                    "tensao": 24.02,
+                    "luminosidade": 331.57,
+                    "razao_temp": 1.35,
+                    "energia_gerada": 84.02,
+                    "energia_esperada": 84.02
+                },
+                {
+                    "data_hora": "2024-04-19 06:30:00",
+                    "temp_ext": 21.36,
+                    "temp_int": 22.48,
+                    "tensao": 29.34,
+                    "luminosidade": 392.25,
+                    "razao_temp": 1.05,
+                    "energia_gerada": 44.1,
+                    "energia_esperada": 44.1
+                },
+                {
+                    "data_hora": "2024-04-19 07:00:00",
+                    "temp_ext": 22.58,
+                    "temp_int": 25.57,
+                    "tensao": 24.07,
+                    "luminosidade": 393.4,
+                    "razao_temp": 1.13,
+                    "energia_gerada": 64.34,
+                    "energia_esperada": 64.34
+                },
+                {
+                    "data_hora": "2024-04-19 07:30:00",
+                    "temp_ext": 20.02,
+                    "temp_int": 20.73,
+                    "tensao": 24.13,
+                    "luminosidade": 133.85,
+                    "razao_temp": 1.04,
+                    "energia_gerada": 60.55,
+                    "energia_esperada": 60.55
+                },
+                {
+                    "data_hora": "2024-04-19 08:00:00",
+                    "temp_ext": 21.73,
+                    "temp_int": 23.22,
+                    "tensao": 25.52,
+                    "luminosidade": 354.37,
+                    "razao_temp": 1.07,
+                    "energia_gerada": 52.76,
+                    "energia_esperada": 52.76
+                },
+                {
+                    "data_hora": "2024-04-19 08:30:00",
+                    "temp_ext": 22.71,
+                    "temp_int": 37.59,
+                    "tensao": 29.5,
+                    "luminosidade": 312.16,
+                    "razao_temp": 1.66,
+                    "energia_gerada": 19.26,
+                    "energia_esperada": 19.26
+                },
+                {
+                    "data_hora": "2024-04-19 09:00:00",
+                    "temp_ext": 22.72,
+                    "temp_int": 27.16,
+                    "tensao": 28.04,
+                    "luminosidade": 133.66,
+                    "razao_temp": 1.2,
+                    "energia_gerada": 16.74,
+                    "energia_esperada": 16.74
+                },
+                {
+                    "data_hora": "2024-04-19 09:30:00",
+                    "temp_ext": 22.96,
+                    "temp_int": 30.41,
+                    "tensao": 24.69,
+                    "luminosidade": 342.49,
+                    "razao_temp": 1.32,
+                    "energia_gerada": 57.46,
+                    "energia_esperada": 57.46
+                },
+                {
+                    "data_hora": "2024-04-19 10:00:00",
+                    "temp_ext": 29.04,
+                    "temp_int": 49.52,
+                    "tensao": 39.14,
+                    "luminosidade": 375.97,
+                    "razao_temp": 1.71,
+                    "energia_gerada": 72.47,
+                    "energia_esperada": 72.47
+                },
+                {
+                    "data_hora": "2024-04-19 10:30:00",
+                    "temp_ext": 29.5,
+                    "temp_int": 42.2,
+                    "tensao": 39.84,
+                    "luminosidade": 303.55,
+                    "razao_temp": 1.43,
+                    "energia_gerada": 85.52,
+                    "energia_esperada": 85.52
+                },
+                {
+                    "data_hora": "2024-04-19 11:00:00",
+                    "temp_ext": 25.6,
+                    "temp_int": 28.64,
+                    "tensao": 39.09,
+                    "luminosidade": 342.68,
+                    "razao_temp": 1.12,
+                    "energia_gerada": 11.58,
+                    "energia_esperada": 11.58
+                },
+                {
+                    "data_hora": "2024-04-19 11:30:00",
+                    "temp_ext": 26.87,
+                    "temp_int": 44.6,
+                    "tensao": 39.93,
+                    "luminosidade": 180.13,
+                    "razao_temp": 1.66,
+                    "energia_gerada": 5.64,
+                    "energia_esperada": 5.64
+                },
+                {
+                    "data_hora": "2024-04-19 12:00:00",
+                    "temp_ext": 25.06,
+                    "temp_int": 39.22,
+                    "tensao": 39.76,
+                    "luminosidade": 300.7,
+                    "razao_temp": 1.57,
+                    "energia_gerada": 65.19,
+                    "energia_esperada": 65.19
+                },
+                {
+                    "data_hora": "2024-04-19 12:30:00",
+                    "temp_ext": 29.42,
+                    "temp_int": 32.69,
+                    "tensao": 39.42,
+                    "luminosidade": 181.71,
+                    "razao_temp": 1.11,
+                    "energia_gerada": 45.37,
+                    "energia_esperada": 45.37
+                },
+                {
+                    "data_hora": "2024-04-19 13:00:00",
+                    "temp_ext": 27.32,
+                    "temp_int": 33.8,
+                    "tensao": 39.1,
+                    "luminosidade": 314.7,
+                    "razao_temp": 1.24,
+                    "energia_gerada": 99.67,
+                    "energia_esperada": 99.67
+                },
+                {
+                    "data_hora": "2024-04-19 13:30:00",
+                    "temp_ext": 29.5,
+                    "temp_int": 46.31,
+                    "tensao": 39.17,
+                    "luminosidade": 358.56,
+                    "razao_temp": 1.57,
+                    "energia_gerada": 87.5,
+                    "energia_esperada": 87.5
+                },
+                {
+                    "data_hora": "2024-04-19 14:00:00",
+                    "temp_ext": 25.5,
+                    "temp_int": 38.03,
+                    "tensao": 39.9,
+                    "luminosidade": 311.07,
+                    "razao_temp": 1.49,
+                    "energia_gerada": 95.49,
+                    "energia_esperada": 95.49
+                },
+                {
+                    "data_hora": "2024-04-19 14:30:00",
+                    "temp_ext": 27.11,
+                    "temp_int": 47.59,
+                    "tensao": 39.73,
+                    "luminosidade": 318.32,
+                    "razao_temp": 1.76,
+                    "energia_gerada": 40.19,
+                    "energia_esperada": 40.19
+                },
+                {
+                    "data_hora": "2024-04-19 15:00:00",
+                    "temp_ext": 29.45,
+                    "temp_int": 31.35,
+                    "tensao": 39.75,
+                    "luminosidade": 327.19,
+                    "razao_temp": 1.06,
+                    "energia_gerada": 83.38,
+                    "energia_esperada": 83.38
+                },
+                {
+                    "data_hora": "2024-04-19 15:30:00",
+                    "temp_ext": 29.2,
+                    "temp_int": 47.99,
+                    "tensao": 39.63,
+                    "luminosidade": 101.33,
+                    "razao_temp": 1.64,
+                    "energia_gerada": 111.83,
+                    "energia_esperada": 111.83
+                },
+                {
+                    "data_hora": "2024-04-19 16:00:00",
+                    "temp_ext": 20.05,
+                    "temp_int": 22.8,
+                    "tensao": 29.09,
+                    "luminosidade": 370.79,
+                    "razao_temp": 1.14,
+                    "energia_gerada": 35.22,
+                    "energia_esperada": 35.22
+                },
+                {
+                    "data_hora": "2024-04-19 16:30:00",
+                    "temp_ext": 24.93,
+                    "temp_int": 40.47,
+                    "tensao": 24.92,
+                    "luminosidade": 344.51,
+                    "razao_temp": 1.62,
+                    "energia_gerada": 41.06,
+                    "energia_esperada": 41.06
+                },
+                {
+                    "data_hora": "2024-04-19 17:00:00",
+                    "temp_ext": 22.1,
+                    "temp_int": 30.26,
+                    "tensao": 24.49,
+                    "luminosidade": 384.61,
+                    "razao_temp": 1.37,
+                    "energia_gerada": 86.91,
+                    "energia_esperada": 86.91
+                },
+                {
+                    "data_hora": "2024-04-19 17:30:00",
+                    "temp_ext": 22.19,
+                    "temp_int": 25.95,
+                    "tensao": 28.03,
+                    "luminosidade": 120.12,
+                    "razao_temp": 1.17,
+                    "energia_gerada": 37.92,
+                    "energia_esperada": 37.92
+                },
+                {
+                    "data_hora": "2024-04-19 18:00:00",
+                    "temp_ext": 23.42,
+                    "temp_int": 24.93,
+                    "tensao": 25.96,
+                    "luminosidade": 294.51,
+                    "razao_temp": 1.06,
+                    "energia_gerada": 6.57,
+                    "energia_esperada": 6.57
+                },
+                {
+                    "data_hora": "2024-04-19 18:30:00",
+                    "temp_ext": 24.51,
+                    "temp_int": 30.43,
+                    "tensao": 26.55,
+                    "luminosidade": 279.4,
+                    "razao_temp": 1.24,
+                    "energia_gerada": 116.02,
+                    "energia_esperada": 116.02
+                },
+                {
+                    "data_hora": "2024-04-19 19:00:00",
+                    "temp_ext": 23.4,
+                    "temp_int": 30.11,
+                    "tensao": 2.93,
+                    "luminosidade": 262.09,
+                    "razao_temp": 1.29,
+                    "energia_gerada": 0.42,
+                    "energia_esperada": 0.42
+                },
+                {
+                    "data_hora": "2024-04-19 19:30:00",
+                    "temp_ext": 23.05,
+                    "temp_int": 34.44,
+                    "tensao": 3.78,
+                    "luminosidade": 124.59,
+                    "razao_temp": 1.49,
+                    "energia_gerada": 1.51,
+                    "energia_esperada": 1.51
+                },
+                {
+                    "data_hora": "2024-04-19 20:00:00",
+                    "temp_ext": 23.15,
+                    "temp_int": 34.1,
+                    "tensao": 1.1,
+                    "luminosidade": 147.45,
+                    "razao_temp": 1.47,
+                    "energia_gerada": 10.63,
+                    "energia_esperada": 10.63
+                },
+                {
+                    "data_hora": "2024-04-19 20:30:00",
+                    "temp_ext": 24.18,
+                    "temp_int": 33.2,
+                    "tensao": 4.73,
+                    "luminosidade": 163.78,
+                    "razao_temp": 1.37,
+                    "energia_gerada": 7.26,
+                    "energia_esperada": 7.26
+                },
+                {
+                    "data_hora": "2024-04-19 21:00:00",
+                    "temp_ext": 24.24,
+                    "temp_int": 34.63,
+                    "tensao": 0.48,
+                    "luminosidade": 84.52,
+                    "razao_temp": 1.43,
+                    "energia_gerada": 4.35,
+                    "energia_esperada": 4.35
+                },
+                {
+                    "data_hora": "2024-04-19 21:30:00",
+                    "temp_ext": 20.72,
+                    "temp_int": 22.13,
+                    "tensao": 1.2,
+                    "luminosidade": 155.47,
+                    "razao_temp": 1.07,
+                    "energia_gerada": 7.5,
+                    "energia_esperada": 7.5
+                },
+                {
+                    "data_hora": "2024-04-19 22:00:00",
+                    "temp_ext": 20.18,
+                    "temp_int": 37.46,
+                    "tensao": 4.78,
+                    "luminosidade": 175.46,
+                    "razao_temp": 1.86,
+                    "energia_gerada": 4.17,
+                    "energia_esperada": 4.17
+                },
+                {
+                    "data_hora": "2024-04-19 22:30:00",
+                    "temp_ext": 21.82,
+                    "temp_int": 38.7,
+                    "tensao": 1.12,
+                    "luminosidade": 119.51,
+                    "razao_temp": 1.77,
+                    "energia_gerada": 10.1,
+                    "energia_esperada": 10.1
+                },
+                {
+                    "data_hora": "2024-04-19 23:00:00",
+                    "temp_ext": 23.19,
+                    "temp_int": 28.85,
+                    "tensao": 2.58,
+                    "luminosidade": 155.78,
+                    "razao_temp": 1.24,
+                    "energia_gerada": 6.64,
+                    "energia_esperada": 6.64
+                },
+                {
+                    "data_hora": "2024-04-19 23:30:00",
+                    "temp_ext": 24.35,
+                    "temp_int": 40.09,
+                    "tensao": 2.5,
+                    "luminosidade": 151.08,
+                    "razao_temp": 1.65,
+                    "energia_gerada": 6.02,
+                    "energia_esperada": 6.02
+                },
+                {
+                    "data_hora": "2024-04-20 00:00:00",
+                    "temp_ext": 20.02,
+                    "temp_int": 35.41,
+                    "tensao": 2.29,
+                    "luminosidade": 61.81,
+                    "razao_temp": 1.77,
+                    "energia_gerada": 12.51,
+                    "energia_esperada": 12.51
+                },
+                {
+                    "data_hora": "2024-04-20 00:30:00",
+                    "temp_ext": 20.96,
+                    "temp_int": 34.08,
+                    "tensao": 2.58,
+                    "luminosidade": 159.26,
+                    "razao_temp": 1.63,
+                    "energia_gerada": 7.87,
+                    "energia_esperada": 7.87
+                },
+                {
+                    "data_hora": "2024-04-20 01:00:00",
+                    "temp_ext": 24.4,
+                    "temp_int": 42.04,
+                    "tensao": 2.84,
+                    "luminosidade": 161.53,
+                    "razao_temp": 1.72,
+                    "energia_gerada": 10.96,
+                    "energia_esperada": 10.96
+                },
+                {
+                    "data_hora": "2024-04-20 01:30:00",
+                    "temp_ext": 21.6,
+                    "temp_int": 30.81,
+                    "tensao": 2.92,
+                    "luminosidade": 109.97,
+                    "razao_temp": 1.43,
+                    "energia_gerada": 6.42,
+                    "energia_esperada": 6.42
+                },
+                {
+                    "data_hora": "2024-04-20 02:00:00",
+                    "temp_ext": 20.09,
+                    "temp_int": 20.19,
+                    "tensao": 1.61,
+                    "luminosidade": 151.64,
+                    "razao_temp": 1.0,
+                    "energia_gerada": 6.3,
+                    "energia_esperada": 6.3
+                },
+                {
+                    "data_hora": "2024-04-20 02:30:00",
+                    "temp_ext": 23.4,
+                    "temp_int": 30.19,
+                    "tensao": 2.81,
+                    "luminosidade": 70.45,
+                    "razao_temp": 1.29,
+                    "energia_gerada": 2.56,
+                    "energia_esperada": 2.56
+                },
+                {
+                    "data_hora": "2024-04-20 03:00:00",
+                    "temp_ext": 22.94,
+                    "temp_int": 32.9,
+                    "tensao": 0.27,
+                    "luminosidade": 74.1,
+                    "razao_temp": 1.43,
+                    "energia_gerada": 11.98,
+                    "energia_esperada": 11.98
+                },
+                {
+                    "data_hora": "2024-04-20 03:30:00",
+                    "temp_ext": 22.95,
+                    "temp_int": 26.26,
+                    "tensao": 4.88,
+                    "luminosidade": 155.23,
+                    "razao_temp": 1.14,
+                    "energia_gerada": 8.14,
+                    "energia_esperada": 8.14
+                },
+                {
+                    "data_hora": "2024-04-20 04:00:00",
+                    "temp_ext": 21.53,
+                    "temp_int": 32.12,
+                    "tensao": 3.55,
+                    "luminosidade": 261.57,
+                    "razao_temp": 1.49,
+                    "energia_gerada": 7.83,
+                    "energia_esperada": 7.83
+                },
+                {
+                    "data_hora": "2024-04-20 04:30:00",
+                    "temp_ext": 24.07,
+                    "temp_int": 39.77,
+                    "tensao": 3.58,
+                    "luminosidade": 274.25,
+                    "razao_temp": 1.65,
+                    "energia_gerada": 4.89,
+                    "energia_esperada": 4.89
+                },
+                {
+                    "data_hora": "2024-04-20 05:00:00",
+                    "temp_ext": 23.37,
+                    "temp_int": 35.09,
+                    "tensao": 2.84,
+                    "luminosidade": 292.01,
+                    "razao_temp": 1.5,
+                    "energia_gerada": 12.63,
+                    "energia_esperada": 12.63
+                },
+                {
+                    "data_hora": "2024-04-20 05:30:00",
+                    "temp_ext": 24.64,
+                    "temp_int": 34.28,
+                    "tensao": 0.87,
+                    "luminosidade": 140.97,
+                    "razao_temp": 1.39,
+                    "energia_gerada": 10.9,
+                    "energia_esperada": 10.9
+                },
+                {
+                    "data_hora": "2024-04-20 06:00:00",
+                    "temp_ext": 24.14,
+                    "temp_int": 24.85,
+                    "tensao": 25.2,
+                    "luminosidade": 356.45,
+                    "razao_temp": 1.03,
+                    "energia_gerada": 55.67,
+                    "energia_esperada": 55.67
+                },
+                {
+                    "data_hora": "2024-04-20 06:30:00",
+                    "temp_ext": 20.22,
+                    "temp_int": 23.55,
+                    "tensao": 28.8,
+                    "luminosidade": 384.91,
+                    "razao_temp": 1.16,
+                    "energia_gerada": 45.69,
+                    "energia_esperada": 45.69
+                },
+                {
+                    "data_hora": "2024-04-20 07:00:00",
+                    "temp_ext": 23.85,
+                    "temp_int": 29.82,
+                    "tensao": 28.18,
+                    "luminosidade": 175.19,
+                    "razao_temp": 1.25,
+                    "energia_gerada": 102.62,
+                    "energia_esperada": 102.62
+                },
+                {
+                    "data_hora": "2024-04-20 07:30:00",
+                    "temp_ext": 20.12,
+                    "temp_int": 32.04,
+                    "tensao": 27.99,
+                    "luminosidade": 192.92,
+                    "razao_temp": 1.59,
+                    "energia_gerada": 65.94,
+                    "energia_esperada": 65.94
+                },
+                {
+                    "data_hora": "2024-04-20 08:00:00",
+                    "temp_ext": 21.74,
+                    "temp_int": 37.49,
+                    "tensao": 26.15,
+                    "luminosidade": 394.11,
+                    "razao_temp": 1.72,
+                    "energia_gerada": 15.38,
+                    "energia_esperada": 15.38
+                },
+                {
+                    "data_hora": "2024-04-20 08:30:00",
+                    "temp_ext": 20.85,
+                    "temp_int": 29.24,
+                    "tensao": 25.06,
+                    "luminosidade": 382.88,
+                    "razao_temp": 1.4,
+                    "energia_gerada": 10.28,
+                    "energia_esperada": 10.28
+                },
+                {
+                    "data_hora": "2024-04-20 09:00:00",
+                    "temp_ext": 22.63,
+                    "temp_int": 25.83,
+                    "tensao": 29.74,
+                    "luminosidade": 322.08,
+                    "razao_temp": 1.14,
+                    "energia_gerada": 70.62,
+                    "energia_esperada": 70.62
+                },
+                {
+                    "data_hora": "2024-04-20 09:30:00",
+                    "temp_ext": 21.17,
+                    "temp_int": 38.51,
+                    "tensao": 29.75,
+                    "luminosidade": 193.96,
+                    "razao_temp": 1.82,
+                    "energia_gerada": 6.4,
+                    "energia_esperada": 6.4
+                },
+                {
+                    "data_hora": "2024-04-20 10:00:00",
+                    "temp_ext": 29.1,
+                    "temp_int": 52.07,
+                    "tensao": 39.54,
+                    "luminosidade": 374.63,
+                    "razao_temp": 1.79,
+                    "energia_gerada": 49.78,
+                    "energia_esperada": 49.78
+                },
+                {
+                    "data_hora": "2024-04-20 10:30:00",
+                    "temp_ext": 29.2,
+                    "temp_int": 29.76,
+                    "tensao": 39.67,
+                    "luminosidade": 374.02,
+                    "razao_temp": 1.02,
+                    "energia_gerada": 86.43,
+                    "energia_esperada": 86.43
+                },
+                {
+                    "data_hora": "2024-04-20 11:00:00",
+                    "temp_ext": 27.45,
+                    "temp_int": 38.7,
+                    "tensao": 39.13,
+                    "luminosidade": 377.41,
+                    "razao_temp": 1.41,
+                    "energia_gerada": 70.29,
+                    "energia_esperada": 70.29
+                },
+                {
+                    "data_hora": "2024-04-20 11:30:00",
+                    "temp_ext": 25.3,
+                    "temp_int": 30.6,
+                    "tensao": 39.19,
+                    "luminosidade": 379.41,
+                    "razao_temp": 1.21,
+                    "energia_gerada": 113.18,
+                    "energia_esperada": 113.18
+                },
+                {
+                    "data_hora": "2024-04-20 12:00:00",
+                    "temp_ext": 25.82,
+                    "temp_int": 41.98,
+                    "tensao": 39.08,
+                    "luminosidade": 377.11,
+                    "razao_temp": 1.63,
+                    "energia_gerada": 72.71,
+                    "energia_esperada": 72.71
+                },
+                {
+                    "data_hora": "2024-04-20 12:30:00",
+                    "temp_ext": 25.85,
+                    "temp_int": 40.35,
+                    "tensao": 39.72,
+                    "luminosidade": 399.22,
+                    "razao_temp": 1.56,
+                    "energia_gerada": 38.64,
+                    "energia_esperada": 38.64
+                },
+                {
+                    "data_hora": "2024-04-20 13:00:00",
+                    "temp_ext": 27.88,
+                    "temp_int": 38.16,
+                    "tensao": 39.57,
+                    "luminosidade": 331.2,
+                    "razao_temp": 1.37,
+                    "energia_gerada": 2.49,
+                    "energia_esperada": 2.49
+                },
+                {
+                    "data_hora": "2024-04-20 13:30:00",
+                    "temp_ext": 26.01,
+                    "temp_int": 44.54,
+                    "tensao": 39.56,
+                    "luminosidade": 181.98,
+                    "razao_temp": 1.71,
+                    "energia_gerada": 86.54,
+                    "energia_esperada": 86.54
+                },
+                {
+                    "data_hora": "2024-04-20 14:00:00",
+                    "temp_ext": 28.82,
+                    "temp_int": 48.07,
+                    "tensao": 39.49,
+                    "luminosidade": 381.03,
+                    "razao_temp": 1.67,
+                    "energia_gerada": 49.1,
+                    "energia_esperada": 49.1
+                },
+                {
+                    "data_hora": "2024-04-20 14:30:00",
+                    "temp_ext": 26.0,
+                    "temp_int": 44.43,
+                    "tensao": 39.67,
+                    "luminosidade": 325.18,
+                    "razao_temp": 1.71,
+                    "energia_gerada": 78.09,
+                    "energia_esperada": 78.09
+                },
+                {
+                    "data_hora": "2024-04-20 15:00:00",
+                    "temp_ext": 27.02,
+                    "temp_int": 34.29,
+                    "tensao": 39.19,
+                    "luminosidade": 380.76,
+                    "razao_temp": 1.27,
+                    "energia_gerada": 9.56,
+                    "energia_esperada": 9.56
+                },
+                {
+                    "data_hora": "2024-04-20 15:30:00",
+                    "temp_ext": 28.75,
+                    "temp_int": 30.27,
+                    "tensao": 39.46,
+                    "luminosidade": 398.53,
+                    "razao_temp": 1.05,
+                    "energia_gerada": 90.86,
+                    "energia_esperada": 90.86
+                },
+                {
+                    "data_hora": "2024-04-20 16:00:00",
+                    "temp_ext": 23.23,
+                    "temp_int": 37.02,
+                    "tensao": 26.98,
+                    "luminosidade": 383.4,
+                    "razao_temp": 1.59,
+                    "energia_gerada": 19.9,
+                    "energia_esperada": 19.9
+                },
+                {
+                    "data_hora": "2024-04-20 16:30:00",
+                    "temp_ext": 21.2,
+                    "temp_int": 29.33,
+                    "tensao": 29.97,
+                    "luminosidade": 183.37,
+                    "razao_temp": 1.38,
+                    "energia_gerada": 79.66,
+                    "energia_esperada": 79.66
+                },
+                {
+                    "data_hora": "2024-04-20 17:00:00",
+                    "temp_ext": 22.42,
+                    "temp_int": 30.5,
+                    "tensao": 27.82,
+                    "luminosidade": 135.61,
+                    "razao_temp": 1.36,
+                    "energia_gerada": 21.42,
+                    "energia_esperada": 21.42
+                },
+                {
+                    "data_hora": "2024-04-20 17:30:00",
+                    "temp_ext": 23.34,
+                    "temp_int": 29.43,
+                    "tensao": 26.52,
+                    "luminosidade": 335.27,
+                    "razao_temp": 1.26,
+                    "energia_gerada": 5.85,
+                    "energia_esperada": 5.85
+                },
+                {
+                    "data_hora": "2024-04-20 18:00:00",
+                    "temp_ext": 22.23,
+                    "temp_int": 30.04,
+                    "tensao": 28.45,
+                    "luminosidade": 109.18,
+                    "razao_temp": 1.35,
+                    "energia_gerada": 69.86,
+                    "energia_esperada": 69.86
+                },
+                {
+                    "data_hora": "2024-04-20 18:30:00",
+                    "temp_ext": 24.68,
+                    "temp_int": 31.29,
+                    "tensao": 29.97,
+                    "luminosidade": 255.3,
+                    "razao_temp": 1.27,
+                    "energia_gerada": 123.49,
+                    "energia_esperada": 123.49
+                },
+                {
+                    "data_hora": "2024-04-20 19:00:00",
+                    "temp_ext": 23.59,
+                    "temp_int": 36.71,
+                    "tensao": 4.93,
+                    "luminosidade": 255.17,
+                    "razao_temp": 1.56,
+                    "energia_gerada": 10.09,
+                    "energia_esperada": 10.09
+                },
+                {
+                    "data_hora": "2024-04-20 19:30:00",
+                    "temp_ext": 24.99,
+                    "temp_int": 43.14,
+                    "tensao": 2.35,
+                    "luminosidade": 261.69,
+                    "razao_temp": 1.73,
+                    "energia_gerada": 5.14,
+                    "energia_esperada": 5.14
+                },
+                {
+                    "data_hora": "2024-04-20 20:00:00",
+                    "temp_ext": 20.23,
+                    "temp_int": 27.55,
+                    "tensao": 0.31,
+                    "luminosidade": 134.29,
+                    "razao_temp": 1.36,
+                    "energia_gerada": 7.82,
+                    "energia_esperada": 7.82
+                },
+                {
+                    "data_hora": "2024-04-20 20:30:00",
+                    "temp_ext": 20.22,
+                    "temp_int": 26.39,
+                    "tensao": 0.11,
+                    "luminosidade": 149.11,
+                    "razao_temp": 1.31,
+                    "energia_gerada": 0.81,
+                    "energia_esperada": 0.81
+                },
+                {
+                    "data_hora": "2024-04-20 21:00:00",
+                    "temp_ext": 22.21,
+                    "temp_int": 37.46,
+                    "tensao": 3.54,
+                    "luminosidade": 148.6,
+                    "razao_temp": 1.69,
+                    "energia_gerada": 7.31,
+                    "energia_esperada": 7.31
+                },
+                {
+                    "data_hora": "2024-04-20 21:30:00",
+                    "temp_ext": 22.5,
+                    "temp_int": 29.93,
+                    "tensao": 3.74,
+                    "luminosidade": 121.39,
+                    "razao_temp": 1.33,
+                    "energia_gerada": 8.71,
+                    "energia_esperada": 8.71
+                },
+                {
+                    "data_hora": "2024-04-20 22:00:00",
+                    "temp_ext": 21.13,
+                    "temp_int": 33.73,
+                    "tensao": 2.58,
+                    "luminosidade": 131.87,
+                    "razao_temp": 1.6,
+                    "energia_gerada": 3.07,
+                    "energia_esperada": 3.07
+                },
+                {
+                    "data_hora": "2024-04-20 22:30:00",
+                    "temp_ext": 20.63,
+                    "temp_int": 29.25,
+                    "tensao": 4.16,
+                    "luminosidade": 81.24,
+                    "razao_temp": 1.42,
+                    "energia_gerada": 3.51,
+                    "energia_esperada": 3.51
+                },
+                {
+                    "data_hora": "2024-04-20 23:00:00",
+                    "temp_ext": 22.53,
+                    "temp_int": 39.29,
+                    "tensao": 1.41,
+                    "luminosidade": 67.21,
+                    "razao_temp": 1.74,
+                    "energia_gerada": 5.8,
+                    "energia_esperada": 5.8
+                },
+                {
+                    "data_hora": "2024-04-20 23:30:00",
+                    "temp_ext": 22.11,
+                    "temp_int": 24.08,
+                    "tensao": 3.96,
+                    "luminosidade": 144.92,
+                    "razao_temp": 1.09,
+                    "energia_gerada": 9.04,
+                    "energia_esperada": 9.04
+                },
+                {
+                    "data_hora": "2024-04-21 00:00:00",
+                    "temp_ext": 21.63,
+                    "temp_int": 22.25,
+                    "tensao": 1.23,
+                    "luminosidade": 119.93,
+                    "razao_temp": 1.03,
+                    "energia_gerada": 10.94,
+                    "energia_esperada": 10.94
+                },
+                {
+                    "data_hora": "2024-04-21 00:30:00",
+                    "temp_ext": 23.41,
+                    "temp_int": 36.09,
+                    "tensao": 2.65,
+                    "luminosidade": 104.61,
+                    "razao_temp": 1.54,
+                    "energia_gerada": 6.69,
+                    "energia_esperada": 6.69
+                },
+                {
+                    "data_hora": "2024-04-21 01:00:00",
+                    "temp_ext": 24.79,
+                    "temp_int": 27.19,
+                    "tensao": 3.5,
+                    "luminosidade": 56.37,
+                    "razao_temp": 1.1,
+                    "energia_gerada": 4.78,
+                    "energia_esperada": 4.78
+                },
+                {
+                    "data_hora": "2024-04-21 01:30:00",
+                    "temp_ext": 20.67,
+                    "temp_int": 32.14,
+                    "tensao": 1.81,
+                    "luminosidade": 122.0,
+                    "razao_temp": 1.55,
+                    "energia_gerada": 12.58,
+                    "energia_esperada": 12.58
+                },
+                {
+                    "data_hora": "2024-04-21 02:00:00",
+                    "temp_ext": 24.46,
+                    "temp_int": 42.51,
+                    "tensao": 2.2,
+                    "luminosidade": 195.27,
+                    "razao_temp": 1.74,
+                    "energia_gerada": 9.88,
+                    "energia_esperada": 9.88
+                },
+                {
+                    "data_hora": "2024-04-21 02:30:00",
+                    "temp_ext": 22.32,
+                    "temp_int": 29.55,
+                    "tensao": 0.36,
+                    "luminosidade": 102.86,
+                    "razao_temp": 1.32,
+                    "energia_gerada": 9.53,
+                    "energia_esperada": 9.53
+                },
+                {
+                    "data_hora": "2024-04-21 03:00:00",
+                    "temp_ext": 22.07,
+                    "temp_int": 34.79,
+                    "tensao": 4.2,
+                    "luminosidade": 197.4,
+                    "razao_temp": 1.58,
+                    "energia_gerada": 11.32,
+                    "energia_esperada": 11.32
+                },
+                {
+                    "data_hora": "2024-04-21 03:30:00",
+                    "temp_ext": 20.53,
+                    "temp_int": 35.04,
+                    "tensao": 4.26,
+                    "luminosidade": 51.25,
+                    "razao_temp": 1.71,
+                    "energia_gerada": 1.41,
+                    "energia_esperada": 1.41
+                },
+                {
+                    "data_hora": "2024-04-21 04:00:00",
+                    "temp_ext": 20.12,
+                    "temp_int": 20.78,
+                    "tensao": 1.93,
+                    "luminosidade": 297.14,
+                    "razao_temp": 1.03,
+                    "energia_gerada": 4.75,
+                    "energia_esperada": 4.75
+                },
+                {
+                    "data_hora": "2024-04-21 04:30:00",
+                    "temp_ext": 23.4,
+                    "temp_int": 36.07,
+                    "tensao": 3.94,
+                    "luminosidade": 292.46,
+                    "razao_temp": 1.54,
+                    "energia_gerada": 10.56,
+                    "energia_esperada": 10.56
+                },
+                {
+                    "data_hora": "2024-04-21 05:00:00",
+                    "temp_ext": 20.73,
+                    "temp_int": 29.0,
+                    "tensao": 2.34,
+                    "luminosidade": 279.35,
+                    "razao_temp": 1.4,
+                    "energia_gerada": 8.18,
+                    "energia_esperada": 8.18
+                },
+                {
+                    "data_hora": "2024-04-21 05:30:00",
+                    "temp_ext": 22.17,
+                    "temp_int": 26.62,
+                    "tensao": 1.56,
+                    "luminosidade": 284.69,
+                    "razao_temp": 1.2,
+                    "energia_gerada": 3.94,
+                    "energia_esperada": 3.94
+                },
+                {
+                    "data_hora": "2024-04-21 06:00:00",
+                    "temp_ext": 22.66,
+                    "temp_int": 40.18,
+                    "tensao": 24.19,
+                    "luminosidade": 303.56,
+                    "razao_temp": 1.77,
+                    "energia_gerada": 10.03,
+                    "energia_esperada": 10.03
+                },
+                {
+                    "data_hora": "2024-04-21 06:30:00",
+                    "temp_ext": 24.9,
+                    "temp_int": 41.35,
+                    "tensao": 26.98,
+                    "luminosidade": 307.81,
+                    "razao_temp": 1.66,
+                    "energia_gerada": 47.39,
+                    "energia_esperada": 47.39
+                },
+                {
+                    "data_hora": "2024-04-21 07:00:00",
+                    "temp_ext": 22.47,
+                    "temp_int": 25.19,
+                    "tensao": 28.09,
+                    "luminosidade": 303.36,
+                    "razao_temp": 1.12,
+                    "energia_gerada": 103.46,
+                    "energia_esperada": 103.46
+                },
+                {
+                    "data_hora": "2024-04-21 07:30:00",
+                    "temp_ext": 22.13,
+                    "temp_int": 39.59,
+                    "tensao": 26.92,
+                    "luminosidade": 340.4,
+                    "razao_temp": 1.79,
+                    "energia_gerada": 73.58,
+                    "energia_esperada": 73.58
+                },
+                {
+                    "data_hora": "2024-04-21 08:00:00",
+                    "temp_ext": 22.44,
+                    "temp_int": 40.26,
+                    "tensao": 30.0,
+                    "luminosidade": 343.56,
+                    "razao_temp": 1.79,
+                    "energia_gerada": 9.52,
+                    "energia_esperada": 9.52
+                },
+                {
+                    "data_hora": "2024-04-21 08:30:00",
+                    "temp_ext": 24.01,
+                    "temp_int": 28.5,
+                    "tensao": 26.62,
+                    "luminosidade": 331.72,
+                    "razao_temp": 1.19,
+                    "energia_gerada": 0.86,
+                    "energia_esperada": 0.86
+                },
+                {
+                    "data_hora": "2024-04-21 09:00:00",
+                    "temp_ext": 20.6,
+                    "temp_int": 24.5,
+                    "tensao": 24.62,
+                    "luminosidade": 368.93,
+                    "razao_temp": 1.19,
+                    "energia_gerada": 12.53,
+                    "energia_esperada": 12.53
+                },
+                {
+                    "data_hora": "2024-04-21 09:30:00",
+                    "temp_ext": 22.08,
+                    "temp_int": 33.61,
+                    "tensao": 25.67,
+                    "luminosidade": 324.31,
+                    "razao_temp": 1.52,
+                    "energia_gerada": 121.82,
+                    "energia_esperada": 121.82
+                },
+                {
+                    "data_hora": "2024-04-21 10:00:00",
+                    "temp_ext": 27.84,
+                    "temp_int": 34.68,
+                    "tensao": 39.4,
+                    "luminosidade": 346.72,
+                    "razao_temp": 1.25,
+                    "energia_gerada": 87.95,
+                    "energia_esperada": 87.95
+                },
+                {
+                    "data_hora": "2024-04-21 10:30:00",
+                    "temp_ext": 25.31,
+                    "temp_int": 33.76,
+                    "tensao": 39.83,
+                    "luminosidade": 376.26,
+                    "razao_temp": 1.33,
+                    "energia_gerada": 68.65,
+                    "energia_esperada": 68.65
+                },
+                {
+                    "data_hora": "2024-04-21 11:00:00",
+                    "temp_ext": 25.64,
+                    "temp_int": 26.14,
+                    "tensao": 39.53,
+                    "luminosidade": 329.1,
+                    "razao_temp": 1.02,
+                    "energia_gerada": 12.19,
+                    "energia_esperada": 12.19
+                },
+                {
+                    "data_hora": "2024-04-21 11:30:00",
+                    "temp_ext": 27.73,
+                    "temp_int": 48.89,
+                    "tensao": 39.9,
+                    "luminosidade": 157.02,
+                    "razao_temp": 1.76,
+                    "energia_gerada": 45.96,
+                    "energia_esperada": 45.96
+                },
+                {
+                    "data_hora": "2024-04-21 12:00:00",
+                    "temp_ext": 29.08,
+                    "temp_int": 31.68,
+                    "tensao": 39.84,
+                    "luminosidade": 385.31,
+                    "razao_temp": 1.09,
+                    "energia_gerada": 82.82,
+                    "energia_esperada": 82.82
+                },
+                {
+                    "data_hora": "2024-04-21 12:30:00",
+                    "temp_ext": 29.82,
+                    "temp_int": 48.91,
+                    "tensao": 39.87,
+                    "luminosidade": 344.54,
+                    "razao_temp": 1.64,
+                    "energia_gerada": 63.05,
+                    "energia_esperada": 63.05
+                },
+                {
+                    "data_hora": "2024-04-21 13:00:00",
+                    "temp_ext": 29.05,
+                    "temp_int": 49.18,
+                    "tensao": 39.34,
+                    "luminosidade": 139.34,
+                    "razao_temp": 1.69,
+                    "energia_gerada": 9.63,
+                    "energia_esperada": 9.63
+                },
+                {
+                    "data_hora": "2024-04-21 13:30:00",
+                    "temp_ext": 27.02,
+                    "temp_int": 28.73,
+                    "tensao": 39.24,
+                    "luminosidade": 313.98,
+                    "razao_temp": 1.06,
+                    "energia_gerada": 105.91,
+                    "energia_esperada": 105.91
+                },
+                {
+                    "data_hora": "2024-04-21 14:00:00",
+                    "temp_ext": 29.29,
+                    "temp_int": 34.45,
+                    "tensao": 39.13,
+                    "luminosidade": 366.89,
+                    "razao_temp": 1.18,
+                    "energia_gerada": 78.82,
+                    "energia_esperada": 78.82
+                },
+                {
+                    "data_hora": "2024-04-21 14:30:00",
+                    "temp_ext": 28.74,
+                    "temp_int": 50.15,
+                    "tensao": 39.73,
+                    "luminosidade": 347.8,
+                    "razao_temp": 1.74,
+                    "energia_gerada": 72.89,
+                    "energia_esperada": 72.89
+                },
+                {
+                    "data_hora": "2024-04-21 15:00:00",
+                    "temp_ext": 29.16,
+                    "temp_int": 31.66,
+                    "tensao": 39.03,
+                    "luminosidade": 368.38,
+                    "razao_temp": 1.09,
+                    "energia_gerada": 14.38,
+                    "energia_esperada": 14.38
+                },
+                {
+                    "data_hora": "2024-04-21 15:30:00",
+                    "temp_ext": 26.01,
+                    "temp_int": 45.55,
+                    "tensao": 39.85,
+                    "luminosidade": 390.49,
+                    "razao_temp": 1.75,
+                    "energia_gerada": 50.28,
+                    "energia_esperada": 50.28
+                },
+                {
+                    "data_hora": "2024-04-21 16:00:00",
+                    "temp_ext": 21.56,
+                    "temp_int": 35.99,
+                    "tensao": 28.68,
+                    "luminosidade": 388.53,
+                    "razao_temp": 1.67,
+                    "energia_gerada": 26.45,
+                    "energia_esperada": 26.45
+                },
+                {
+                    "data_hora": "2024-04-21 16:30:00",
+                    "temp_ext": 20.68,
+                    "temp_int": 34.84,
+                    "tensao": 25.44,
+                    "luminosidade": 348.85,
+                    "razao_temp": 1.68,
+                    "energia_gerada": 24.81,
+                    "energia_esperada": 24.81
+                },
+                {
+                    "data_hora": "2024-04-21 17:00:00",
+                    "temp_ext": 22.25,
+                    "temp_int": 23.18,
+                    "tensao": 25.57,
+                    "luminosidade": 158.56,
+                    "razao_temp": 1.04,
+                    "energia_gerada": 74.1,
+                    "energia_esperada": 74.1
+                },
+                {
+                    "data_hora": "2024-04-21 17:30:00",
+                    "temp_ext": 21.56,
+                    "temp_int": 22.97,
+                    "tensao": 29.8,
+                    "luminosidade": 133.4,
+                    "razao_temp": 1.07,
+                    "energia_gerada": 3.76,
+                    "energia_esperada": 3.76
+                },
+                {
+                    "data_hora": "2024-04-21 18:00:00",
+                    "temp_ext": 23.14,
+                    "temp_int": 25.19,
+                    "tensao": 25.04,
+                    "luminosidade": 268.03,
+                    "razao_temp": 1.09,
+                    "energia_gerada": 54.49,
+                    "energia_esperada": 54.49
+                },
+                {
+                    "data_hora": "2024-04-21 18:30:00",
+                    "temp_ext": 23.26,
+                    "temp_int": 37.27,
+                    "tensao": 24.75,
+                    "luminosidade": 269.16,
+                    "razao_temp": 1.6,
+                    "energia_gerada": 42.6,
+                    "energia_esperada": 42.6
+                },
+                {
+                    "data_hora": "2024-04-21 19:00:00",
+                    "temp_ext": 23.26,
+                    "temp_int": 39.62,
+                    "tensao": 4.53,
+                    "luminosidade": 278.69,
+                    "razao_temp": 1.7,
+                    "energia_gerada": 1.24,
+                    "energia_esperada": 1.24
+                },
+                {
+                    "data_hora": "2024-04-21 19:30:00",
+                    "temp_ext": 23.32,
+                    "temp_int": 32.34,
+                    "tensao": 0.14,
+                    "luminosidade": 144.25,
+                    "razao_temp": 1.39,
+                    "energia_gerada": 2.1,
+                    "energia_esperada": 2.1
+                },
+                {
+                    "data_hora": "2024-04-21 20:00:00",
+                    "temp_ext": 23.22,
+                    "temp_int": 40.72,
+                    "tensao": 1.4,
+                    "luminosidade": 109.47,
+                    "razao_temp": 1.75,
+                    "energia_gerada": 3.62,
+                    "energia_esperada": 3.62
+                },
+                {
+                    "data_hora": "2024-04-21 20:30:00",
+                    "temp_ext": 24.35,
+                    "temp_int": 42.86,
+                    "tensao": 2.69,
+                    "luminosidade": 175.52,
+                    "razao_temp": 1.76,
+                    "energia_gerada": 8.9,
+                    "energia_esperada": 8.9
+                },
+                {
+                    "data_hora": "2024-04-21 21:00:00",
+                    "temp_ext": 23.01,
+                    "temp_int": 39.53,
+                    "tensao": 2.68,
+                    "luminosidade": 193.75,
+                    "razao_temp": 1.72,
+                    "energia_gerada": 8.7,
+                    "energia_esperada": 8.7
+                },
+                {
+                    "data_hora": "2024-04-21 21:30:00",
+                    "temp_ext": 20.44,
+                    "temp_int": 31.52,
+                    "tensao": 4.91,
+                    "luminosidade": 116.82,
+                    "razao_temp": 1.54,
+                    "energia_gerada": 5.56,
+                    "energia_esperada": 5.56
+                },
+                {
+                    "data_hora": "2024-04-21 22:00:00",
+                    "temp_ext": 21.03,
+                    "temp_int": 32.07,
+                    "tensao": 1.66,
+                    "luminosidade": 75.16,
+                    "razao_temp": 1.52,
+                    "energia_gerada": 3.52,
+                    "energia_esperada": 3.52
+                },
+                {
+                    "data_hora": "2024-04-21 22:30:00",
+                    "temp_ext": 21.59,
+                    "temp_int": 27.89,
+                    "tensao": 2.19,
+                    "luminosidade": 124.1,
+                    "razao_temp": 1.29,
+                    "energia_gerada": 0.34,
+                    "energia_esperada": 0.34
+                },
+                {
+                    "data_hora": "2024-04-21 23:00:00",
+                    "temp_ext": 23.01,
+                    "temp_int": 27.26,
+                    "tensao": 0.06,
+                    "luminosidade": 168.61,
+                    "razao_temp": 1.18,
+                    "energia_gerada": 12.21,
+                    "energia_esperada": 12.21
+                },
+                {
+                    "data_hora": "2024-04-21 23:30:00",
+                    "temp_ext": 23.88,
+                    "temp_int": 38.54,
+                    "tensao": 2.48,
+                    "luminosidade": 52.24,
+                    "razao_temp": 1.61,
+                    "energia_gerada": 6.04,
+                    "energia_esperada": 6.04
+                },
+                {
+                    "data_hora": "2024-04-22 00:00:00",
+                    "temp_ext": 24.3,
+                    "temp_int": 40.32,
+                    "tensao": 2.15,
+                    "luminosidade": 195.91,
+                    "razao_temp": 1.66,
+                    "energia_gerada": 3.26,
+                    "energia_esperada": 3.26
+                },
+                {
+                    "data_hora": "2024-04-22 00:30:00",
+                    "temp_ext": 21.32,
+                    "temp_int": 37.57,
+                    "tensao": 4.83,
+                    "luminosidade": 118.9,
+                    "razao_temp": 1.76,
+                    "energia_gerada": 10.58,
+                    "energia_esperada": 10.58
+                },
+                {
+                    "data_hora": "2024-04-22 01:00:00",
+                    "temp_ext": 24.04,
+                    "temp_int": 40.73,
+                    "tensao": 1.34,
+                    "luminosidade": 106.5,
+                    "razao_temp": 1.69,
+                    "energia_gerada": 0.22,
+                    "energia_esperada": 0.22
+                },
+                {
+                    "data_hora": "2024-04-22 01:30:00",
+                    "temp_ext": 22.04,
+                    "temp_int": 32.45,
+                    "tensao": 0.78,
+                    "luminosidade": 186.04,
+                    "razao_temp": 1.47,
+                    "energia_gerada": 2.14,
+                    "energia_esperada": 2.14
+                },
+                {
+                    "data_hora": "2024-04-22 02:00:00",
+                    "temp_ext": 24.09,
+                    "temp_int": 37.07,
+                    "tensao": 2.58,
+                    "luminosidade": 138.53,
+                    "razao_temp": 1.54,
+                    "energia_gerada": 11.88,
+                    "energia_esperada": 11.88
+                },
+                {
+                    "data_hora": "2024-04-22 02:30:00",
+                    "temp_ext": 23.03,
+                    "temp_int": 38.42,
+                    "tensao": 3.27,
+                    "luminosidade": 139.55,
+                    "razao_temp": 1.67,
+                    "energia_gerada": 10.48,
+                    "energia_esperada": 10.48
+                },
+                {
+                    "data_hora": "2024-04-22 03:00:00",
+                    "temp_ext": 23.88,
+                    "temp_int": 32.82,
+                    "tensao": 1.75,
+                    "luminosidade": 191.94,
+                    "razao_temp": 1.37,
+                    "energia_gerada": 9.12,
+                    "energia_esperada": 9.12
+                },
+                {
+                    "data_hora": "2024-04-22 03:30:00",
+                    "temp_ext": 20.84,
+                    "temp_int": 23.56,
+                    "tensao": 3.33,
+                    "luminosidade": 125.56,
+                    "razao_temp": 1.13,
+                    "energia_gerada": 10.37,
+                    "energia_esperada": 10.37
+                },
+                {
+                    "data_hora": "2024-04-22 04:00:00",
+                    "temp_ext": 24.22,
+                    "temp_int": 29.13,
+                    "tensao": 2.36,
+                    "luminosidade": 253.4,
+                    "razao_temp": 1.2,
+                    "energia_gerada": 12.32,
+                    "energia_esperada": 12.32
+                },
+                {
+                    "data_hora": "2024-04-22 04:30:00",
+                    "temp_ext": 20.04,
+                    "temp_int": 25.02,
+                    "tensao": 0.68,
+                    "luminosidade": 250.52,
+                    "razao_temp": 1.25,
+                    "energia_gerada": 1.38,
+                    "energia_esperada": 1.38
+                },
+                {
+                    "data_hora": "2024-04-22 05:00:00",
+                    "temp_ext": 21.27,
+                    "temp_int": 24.14,
+                    "tensao": 2.5,
+                    "luminosidade": 255.87,
+                    "razao_temp": 1.13,
+                    "energia_gerada": 3.31,
+                    "energia_esperada": 3.31
+                },
+                {
+                    "data_hora": "2024-04-22 05:30:00",
+                    "temp_ext": 23.38,
+                    "temp_int": 27.06,
+                    "tensao": 0.35,
+                    "luminosidade": 298.95,
+                    "razao_temp": 1.16,
+                    "energia_gerada": 10.28,
+                    "energia_esperada": 10.28
+                },
+                {
+                    "data_hora": "2024-04-22 06:00:00",
+                    "temp_ext": 23.89,
+                    "temp_int": 41.65,
+                    "tensao": 26.76,
+                    "luminosidade": 305.43,
+                    "razao_temp": 1.74,
+                    "energia_gerada": 99.74,
+                    "energia_esperada": 99.74
+                },
+                {
+                    "data_hora": "2024-04-22 06:30:00",
+                    "temp_ext": 21.86,
+                    "temp_int": 35.53,
+                    "tensao": 27.05,
+                    "luminosidade": 354.92,
+                    "razao_temp": 1.63,
+                    "energia_gerada": 61.06,
+                    "energia_esperada": 61.06
+                },
+                {
+                    "data_hora": "2024-04-22 07:00:00",
+                    "temp_ext": 24.45,
+                    "temp_int": 27.26,
+                    "tensao": 24.3,
+                    "luminosidade": 360.51,
+                    "razao_temp": 1.11,
+                    "energia_gerada": 37.94,
+                    "energia_esperada": 37.94
+                },
+                {
+                    "data_hora": "2024-04-22 07:30:00",
+                    "temp_ext": 24.98,
+                    "temp_int": 43.23,
+                    "tensao": 29.72,
+                    "luminosidade": 341.31,
+                    "razao_temp": 1.73,
+                    "energia_gerada": 44.89,
+                    "energia_esperada": 44.89
+                },
+                {
+                    "data_hora": "2024-04-22 08:00:00",
+                    "temp_ext": 24.27,
+                    "temp_int": 31.13,
+                    "tensao": 29.65,
+                    "luminosidade": 366.77,
+                    "razao_temp": 1.28,
+                    "energia_gerada": 39.18,
+                    "energia_esperada": 39.18
+                },
+                {
+                    "data_hora": "2024-04-22 08:30:00",
+                    "temp_ext": 24.38,
+                    "temp_int": 28.91,
+                    "tensao": 28.32,
+                    "luminosidade": 314.67,
+                    "razao_temp": 1.19,
+                    "energia_gerada": 71.04,
+                    "energia_esperada": 71.04
+                },
+                {
+                    "data_hora": "2024-04-22 09:00:00",
+                    "temp_ext": 22.62,
+                    "temp_int": 29.61,
+                    "tensao": 26.12,
+                    "luminosidade": 115.02,
+                    "razao_temp": 1.31,
+                    "energia_gerada": 3.3,
+                    "energia_esperada": 3.3
+                },
+                {
+                    "data_hora": "2024-04-22 09:30:00",
+                    "temp_ext": 23.18,
+                    "temp_int": 35.06,
+                    "tensao": 24.76,
+                    "luminosidade": 366.04,
+                    "razao_temp": 1.51,
+                    "energia_gerada": 34.51,
+                    "energia_esperada": 34.51
+                },
+                {
+                    "data_hora": "2024-04-22 10:00:00",
+                    "temp_ext": 25.19,
+                    "temp_int": 38.37,
+                    "tensao": 39.63,
+                    "luminosidade": 312.67,
+                    "razao_temp": 1.52,
+                    "energia_gerada": 124.65,
+                    "energia_esperada": 124.65
+                },
+                {
+                    "data_hora": "2024-04-22 10:30:00",
+                    "temp_ext": 27.25,
+                    "temp_int": 50.18,
+                    "tensao": 39.42,
+                    "luminosidade": 365.67,
+                    "razao_temp": 1.84,
+                    "energia_gerada": 125.17,
+                    "energia_esperada": 125.17
+                },
+                {
+                    "data_hora": "2024-04-22 11:00:00",
+                    "temp_ext": 25.13,
+                    "temp_int": 26.6,
+                    "tensao": 39.66,
+                    "luminosidade": 323.21,
+                    "razao_temp": 1.06,
+                    "energia_gerada": 5.81,
+                    "energia_esperada": 5.81
+                },
+                {
+                    "data_hora": "2024-04-22 11:30:00",
+                    "temp_ext": 25.38,
+                    "temp_int": 40.72,
+                    "tensao": 39.24,
+                    "luminosidade": 127.73,
+                    "razao_temp": 1.6,
+                    "energia_gerada": 67.45,
+                    "energia_esperada": 67.45
+                },
+                {
+                    "data_hora": "2024-04-22 12:00:00",
+                    "temp_ext": 26.31,
+                    "temp_int": 39.35,
+                    "tensao": 39.71,
+                    "luminosidade": 328.02,
+                    "razao_temp": 1.5,
+                    "energia_gerada": 16.88,
+                    "energia_esperada": 16.88
+                },
+                {
+                    "data_hora": "2024-04-22 12:30:00",
+                    "temp_ext": 26.57,
+                    "temp_int": 40.51,
+                    "tensao": 39.36,
+                    "luminosidade": 338.31,
+                    "razao_temp": 1.52,
+                    "energia_gerada": 29.0,
+                    "energia_esperada": 29.0
+                },
+                {
+                    "data_hora": "2024-04-22 13:00:00",
+                    "temp_ext": 25.38,
+                    "temp_int": 26.51,
+                    "tensao": 39.69,
+                    "luminosidade": 352.21,
+                    "razao_temp": 1.04,
+                    "energia_gerada": 17.15,
+                    "energia_esperada": 17.15
+                },
+                {
+                    "data_hora": "2024-04-22 13:30:00",
+                    "temp_ext": 28.09,
+                    "temp_int": 50.09,
+                    "tensao": 39.21,
+                    "luminosidade": 343.32,
+                    "razao_temp": 1.78,
+                    "energia_gerada": 23.91,
+                    "energia_esperada": 23.91
+                },
+                {
+                    "data_hora": "2024-04-22 14:00:00",
+                    "temp_ext": 29.51,
+                    "temp_int": 29.66,
+                    "tensao": 39.13,
+                    "luminosidade": 379.1,
+                    "razao_temp": 1.01,
+                    "energia_gerada": 5.78,
+                    "energia_esperada": 5.78
+                },
+                {
+                    "data_hora": "2024-04-22 14:30:00",
+                    "temp_ext": 27.41,
+                    "temp_int": 48.64,
+                    "tensao": 39.23,
+                    "luminosidade": 325.26,
+                    "razao_temp": 1.77,
+                    "energia_gerada": 11.58,
+                    "energia_esperada": 11.58
+                },
+                {
+                    "data_hora": "2024-04-22 15:00:00",
+                    "temp_ext": 29.58,
+                    "temp_int": 35.06,
+                    "tensao": 39.39,
+                    "luminosidade": 394.73,
+                    "razao_temp": 1.19,
+                    "energia_gerada": 55.14,
+                    "energia_esperada": 55.14
+                },
+                {
+                    "data_hora": "2024-04-22 15:30:00",
+                    "temp_ext": 29.35,
+                    "temp_int": 46.89,
+                    "tensao": 39.09,
+                    "luminosidade": 359.11,
+                    "razao_temp": 1.6,
+                    "energia_gerada": 45.62,
+                    "energia_esperada": 45.62
+                },
+                {
+                    "data_hora": "2024-04-22 16:00:00",
+                    "temp_ext": 23.17,
+                    "temp_int": 24.06,
+                    "tensao": 26.84,
+                    "luminosidade": 379.42,
+                    "razao_temp": 1.04,
+                    "energia_gerada": 36.57,
+                    "energia_esperada": 36.57
+                },
+                {
+                    "data_hora": "2024-04-22 16:30:00",
+                    "temp_ext": 24.21,
+                    "temp_int": 34.58,
+                    "tensao": 28.16,
+                    "luminosidade": 372.48,
+                    "razao_temp": 1.43,
+                    "energia_gerada": 5.82,
+                    "energia_esperada": 5.82
+                },
+                {
+                    "data_hora": "2024-04-22 17:00:00",
+                    "temp_ext": 23.02,
+                    "temp_int": 27.88,
+                    "tensao": 29.25,
+                    "luminosidade": 360.84,
+                    "razao_temp": 1.21,
+                    "energia_gerada": 28.75,
+                    "energia_esperada": 28.75
+                },
+                {
+                    "data_hora": "2024-04-22 17:30:00",
+                    "temp_ext": 20.06,
+                    "temp_int": 27.55,
+                    "tensao": 27.99,
+                    "luminosidade": 381.96,
+                    "razao_temp": 1.37,
+                    "energia_gerada": 78.46,
+                    "energia_esperada": 78.46
+                },
+                {
+                    "data_hora": "2024-04-22 18:00:00",
+                    "temp_ext": 24.58,
+                    "temp_int": 38.46,
+                    "tensao": 26.79,
+                    "luminosidade": 274.22,
+                    "razao_temp": 1.56,
+                    "energia_gerada": 53.42,
+                    "energia_esperada": 53.42
+                },
+                {
+                    "data_hora": "2024-04-22 18:30:00",
+                    "temp_ext": 24.65,
+                    "temp_int": 38.17,
+                    "tensao": 25.99,
+                    "luminosidade": 126.89,
+                    "razao_temp": 1.55,
+                    "energia_gerada": 125.32,
+                    "energia_esperada": 125.32
+                },
+                {
+                    "data_hora": "2024-04-22 19:00:00",
+                    "temp_ext": 24.07,
+                    "temp_int": 33.14,
+                    "tensao": 1.58,
+                    "luminosidade": 290.52,
+                    "razao_temp": 1.38,
+                    "energia_gerada": 12.27,
+                    "energia_esperada": 12.27
+                },
+                {
+                    "data_hora": "2024-04-22 19:30:00",
+                    "temp_ext": 24.9,
+                    "temp_int": 34.55,
+                    "tensao": 4.9,
+                    "luminosidade": 259.69,
+                    "razao_temp": 1.39,
+                    "energia_gerada": 12.39,
+                    "energia_esperada": 12.39
+                },
+                {
+                    "data_hora": "2024-04-22 20:00:00",
+                    "temp_ext": 22.46,
+                    "temp_int": 32.02,
+                    "tensao": 3.22,
+                    "luminosidade": 199.44,
+                    "razao_temp": 1.43,
+                    "energia_gerada": 10.33,
+                    "energia_esperada": 10.33
+                },
+                {
+                    "data_hora": "2024-04-22 20:30:00",
+                    "temp_ext": 24.04,
+                    "temp_int": 35.34,
+                    "tensao": 2.25,
+                    "luminosidade": 55.98,
+                    "razao_temp": 1.47,
+                    "energia_gerada": 5.18,
+                    "energia_esperada": 5.18
+                },
+                {
+                    "data_hora": "2024-04-22 21:00:00",
+                    "temp_ext": 24.28,
+                    "temp_int": 35.82,
+                    "tensao": 0.16,
+                    "luminosidade": 70.83,
+                    "razao_temp": 1.48,
+                    "energia_gerada": 0.94,
+                    "energia_esperada": 0.94
+                },
+                {
+                    "data_hora": "2024-04-22 21:30:00",
+                    "temp_ext": 20.65,
+                    "temp_int": 36.31,
+                    "tensao": 2.63,
+                    "luminosidade": 110.36,
+                    "razao_temp": 1.76,
+                    "energia_gerada": 0.34,
+                    "energia_esperada": 0.34
+                },
+                {
+                    "data_hora": "2024-04-22 22:00:00",
+                    "temp_ext": 23.11,
+                    "temp_int": 40.53,
+                    "tensao": 3.25,
+                    "luminosidade": 98.03,
+                    "razao_temp": 1.75,
+                    "energia_gerada": 0.07,
+                    "energia_esperada": 0.07
+                },
+                {
+                    "data_hora": "2024-04-22 22:30:00",
+                    "temp_ext": 20.79,
+                    "temp_int": 37.56,
+                    "tensao": 3.02,
+                    "luminosidade": 196.47,
+                    "razao_temp": 1.81,
+                    "energia_gerada": 4.07,
+                    "energia_esperada": 4.07
+                },
+                {
+                    "data_hora": "2024-04-22 23:00:00",
+                    "temp_ext": 23.13,
+                    "temp_int": 40.45,
+                    "tensao": 1.98,
+                    "luminosidade": 152.92,
+                    "razao_temp": 1.75,
+                    "energia_gerada": 2.3,
+                    "energia_esperada": 2.3
+                },
+                {
+                    "data_hora": "2024-04-22 23:30:00",
+                    "temp_ext": 23.03,
+                    "temp_int": 30.71,
+                    "tensao": 3.14,
+                    "luminosidade": 85.36,
+                    "razao_temp": 1.33,
+                    "energia_gerada": 8.18,
+                    "energia_esperada": 8.18
+                },
+                {
+                    "data_hora": "2024-04-23 00:00:00",
+                    "temp_ext": 21.7,
+                    "temp_int": 36.46,
+                    "tensao": 0.66,
+                    "luminosidade": 155.59,
+                    "razao_temp": 1.68,
+                    "energia_gerada": 5.9,
+                    "energia_esperada": 5.9
+                },
+                {
+                    "data_hora": "2024-04-23 00:30:00",
+                    "temp_ext": 24.84,
+                    "temp_int": 29.82,
+                    "tensao": 2.14,
+                    "luminosidade": 197.48,
+                    "razao_temp": 1.2,
+                    "energia_gerada": 6.69,
+                    "energia_esperada": 6.69
+                },
+                {
+                    "data_hora": "2024-04-23 01:00:00",
+                    "temp_ext": 22.32,
+                    "temp_int": 25.26,
+                    "tensao": 0.62,
+                    "luminosidade": 105.37,
+                    "razao_temp": 1.13,
+                    "energia_gerada": 1.49,
+                    "energia_esperada": 1.49
+                },
+                {
+                    "data_hora": "2024-04-23 01:30:00",
+                    "temp_ext": 21.56,
+                    "temp_int": 27.38,
+                    "tensao": 0.28,
+                    "luminosidade": 104.81,
+                    "razao_temp": 1.27,
+                    "energia_gerada": 10.18,
+                    "energia_esperada": 10.18
+                },
+                {
+                    "data_hora": "2024-04-23 02:00:00",
+                    "temp_ext": 20.46,
+                    "temp_int": 32.64,
+                    "tensao": 0.79,
+                    "luminosidade": 109.48,
+                    "razao_temp": 1.6,
+                    "energia_gerada": 11.38,
+                    "energia_esperada": 11.38
+                },
+                {
+                    "data_hora": "2024-04-23 02:30:00",
+                    "temp_ext": 20.06,
+                    "temp_int": 31.12,
+                    "tensao": 2.84,
+                    "luminosidade": 175.74,
+                    "razao_temp": 1.55,
+                    "energia_gerada": 4.34,
+                    "energia_esperada": 4.34
+                },
+                {
+                    "data_hora": "2024-04-23 03:00:00",
+                    "temp_ext": 22.95,
+                    "temp_int": 28.52,
+                    "tensao": 0.82,
+                    "luminosidade": 109.3,
+                    "razao_temp": 1.24,
+                    "energia_gerada": 11.42,
+                    "energia_esperada": 11.42
+                },
+                {
+                    "data_hora": "2024-04-23 03:30:00",
+                    "temp_ext": 23.68,
+                    "temp_int": 33.36,
+                    "tensao": 2.34,
+                    "luminosidade": 111.27,
+                    "razao_temp": 1.41,
+                    "energia_gerada": 11.14,
+                    "energia_esperada": 11.14
+                },
+                {
+                    "data_hora": "2024-04-23 04:00:00",
+                    "temp_ext": 22.08,
+                    "temp_int": 40.6,
+                    "tensao": 3.19,
+                    "luminosidade": 284.71,
+                    "razao_temp": 1.84,
+                    "energia_gerada": 0.02,
+                    "energia_esperada": 0.02
+                },
+                {
+                    "data_hora": "2024-04-23 04:30:00",
+                    "temp_ext": 23.07,
+                    "temp_int": 27.44,
+                    "tensao": 3.65,
+                    "luminosidade": 286.31,
+                    "razao_temp": 1.19,
+                    "energia_gerada": 10.1,
+                    "energia_esperada": 10.1
+                },
+                {
+                    "data_hora": "2024-04-23 05:00:00",
+                    "temp_ext": 21.27,
+                    "temp_int": 32.88,
+                    "tensao": 3.6,
+                    "luminosidade": 287.63,
+                    "razao_temp": 1.55,
+                    "energia_gerada": 7.17,
+                    "energia_esperada": 7.17
+                },
+                {
+                    "data_hora": "2024-04-23 05:30:00",
+                    "temp_ext": 23.54,
+                    "temp_int": 36.93,
+                    "tensao": 2.19,
+                    "luminosidade": 270.55,
+                    "razao_temp": 1.57,
+                    "energia_gerada": 10.7,
+                    "energia_esperada": 10.7
+                },
+                {
+                    "data_hora": "2024-04-23 06:00:00",
+                    "temp_ext": 20.28,
+                    "temp_int": 36.91,
+                    "tensao": 27.04,
+                    "luminosidade": 191.07,
+                    "razao_temp": 1.82,
+                    "energia_gerada": 8.29,
+                    "energia_esperada": 8.29
+                },
+                {
+                    "data_hora": "2024-04-23 06:30:00",
+                    "temp_ext": 24.18,
+                    "temp_int": 31.75,
+                    "tensao": 24.57,
+                    "luminosidade": 112.05,
+                    "razao_temp": 1.31,
+                    "energia_gerada": 56.54,
+                    "energia_esperada": 56.54
+                },
+                {
+                    "data_hora": "2024-04-23 07:00:00",
+                    "temp_ext": 22.88,
+                    "temp_int": 29.11,
+                    "tensao": 28.31,
+                    "luminosidade": 335.33,
+                    "razao_temp": 1.27,
+                    "energia_gerada": 1.6,
+                    "energia_esperada": 1.6
+                },
+                {
+                    "data_hora": "2024-04-23 07:30:00",
+                    "temp_ext": 21.5,
+                    "temp_int": 37.4,
+                    "tensao": 24.23,
+                    "luminosidade": 346.39,
+                    "razao_temp": 1.74,
+                    "energia_gerada": 113.13,
+                    "energia_esperada": 113.13
+                },
+                {
+                    "data_hora": "2024-04-23 08:00:00",
+                    "temp_ext": 21.94,
+                    "temp_int": 26.92,
+                    "tensao": 28.65,
+                    "luminosidade": 137.03,
+                    "razao_temp": 1.23,
+                    "energia_gerada": 20.34,
+                    "energia_esperada": 20.34
+                },
+                {
+                    "data_hora": "2024-04-23 08:30:00",
+                    "temp_ext": 20.03,
+                    "temp_int": 22.55,
+                    "tensao": 29.17,
+                    "luminosidade": 356.16,
+                    "razao_temp": 1.13,
+                    "energia_gerada": 124.73,
+                    "energia_esperada": 124.73
+                },
+                {
+                    "data_hora": "2024-04-23 09:00:00",
+                    "temp_ext": 23.43,
+                    "temp_int": 26.14,
+                    "tensao": 24.43,
+                    "luminosidade": 302.96,
+                    "razao_temp": 1.12,
+                    "energia_gerada": 26.56,
+                    "energia_esperada": 26.56
+                },
+                {
+                    "data_hora": "2024-04-23 09:30:00",
+                    "temp_ext": 22.24,
+                    "temp_int": 33.02,
+                    "tensao": 24.91,
+                    "luminosidade": 363.68,
+                    "razao_temp": 1.48,
+                    "energia_gerada": 40.44,
+                    "energia_esperada": 40.44
+                },
+                {
+                    "data_hora": "2024-04-23 10:00:00",
+                    "temp_ext": 28.17,
+                    "temp_int": 41.63,
+                    "tensao": 39.71,
+                    "luminosidade": 332.39,
+                    "razao_temp": 1.48,
+                    "energia_gerada": 44.88,
+                    "energia_esperada": 44.88
+                },
+                {
+                    "data_hora": "2024-04-23 10:30:00",
+                    "temp_ext": 29.17,
+                    "temp_int": 49.2,
+                    "tensao": 39.27,
+                    "luminosidade": 103.99,
+                    "razao_temp": 1.69,
+                    "energia_gerada": 64.09,
+                    "energia_esperada": 64.09
+                },
+                {
+                    "data_hora": "2024-04-23 11:00:00",
+                    "temp_ext": 29.21,
+                    "temp_int": 32.09,
+                    "tensao": 39.92,
+                    "luminosidade": 378.63,
+                    "razao_temp": 1.1,
+                    "energia_gerada": 105.1,
+                    "energia_esperada": 105.1
+                },
+                {
+                    "data_hora": "2024-04-23 11:30:00",
+                    "temp_ext": 27.4,
+                    "temp_int": 43.83,
+                    "tensao": 39.95,
+                    "luminosidade": 164.71,
+                    "razao_temp": 1.6,
+                    "energia_gerada": 33.19,
+                    "energia_esperada": 33.19
+                },
+                {
+                    "data_hora": "2024-04-23 12:00:00",
+                    "temp_ext": 27.77,
+                    "temp_int": 40.82,
+                    "tensao": 39.22,
+                    "luminosidade": 355.6,
+                    "razao_temp": 1.47,
+                    "energia_gerada": 17.76,
+                    "energia_esperada": 17.76
+                },
+                {
+                    "data_hora": "2024-04-23 12:30:00",
+                    "temp_ext": 29.96,
+                    "temp_int": 31.26,
+                    "tensao": 39.84,
+                    "luminosidade": 353.47,
+                    "razao_temp": 1.04,
+                    "energia_gerada": 79.3,
+                    "energia_esperada": 79.3
+                },
+                {
+                    "data_hora": "2024-04-23 13:00:00",
+                    "temp_ext": 29.06,
+                    "temp_int": 44.56,
+                    "tensao": 39.64,
+                    "luminosidade": 323.14,
+                    "razao_temp": 1.53,
+                    "energia_gerada": 2.92,
+                    "energia_esperada": 2.92
+                },
+                {
+                    "data_hora": "2024-04-23 13:30:00",
+                    "temp_ext": 28.37,
+                    "temp_int": 36.68,
+                    "tensao": 39.61,
+                    "luminosidade": 339.35,
+                    "razao_temp": 1.29,
+                    "energia_gerada": 88.68,
+                    "energia_esperada": 88.68
+                },
+                {
+                    "data_hora": "2024-04-23 14:00:00",
+                    "temp_ext": 26.98,
+                    "temp_int": 29.37,
+                    "tensao": 39.83,
+                    "luminosidade": 321.6,
+                    "razao_temp": 1.09,
+                    "energia_gerada": 63.91,
+                    "energia_esperada": 63.91
+                },
+                {
+                    "data_hora": "2024-04-23 14:30:00",
+                    "temp_ext": 27.68,
+                    "temp_int": 33.19,
+                    "tensao": 39.86,
+                    "luminosidade": 305.56,
+                    "razao_temp": 1.2,
+                    "energia_gerada": 13.75,
+                    "energia_esperada": 13.75
+                },
+                {
+                    "data_hora": "2024-04-23 15:00:00",
+                    "temp_ext": 29.64,
+                    "temp_int": 31.4,
+                    "tensao": 39.67,
+                    "luminosidade": 394.37,
+                    "razao_temp": 1.06,
+                    "energia_gerada": 5.4,
+                    "energia_esperada": 5.4
+                },
+                {
+                    "data_hora": "2024-04-23 15:30:00",
+                    "temp_ext": 26.18,
+                    "temp_int": 48.52,
+                    "tensao": 39.6,
+                    "luminosidade": 333.3,
+                    "razao_temp": 1.85,
+                    "energia_gerada": 21.95,
+                    "energia_esperada": 21.95
+                },
+                {
+                    "data_hora": "2024-04-23 16:00:00",
+                    "temp_ext": 24.35,
+                    "temp_int": 41.5,
+                    "tensao": 27.56,
+                    "luminosidade": 107.61,
+                    "razao_temp": 1.7,
+                    "energia_gerada": 15.57,
+                    "energia_esperada": 15.57
+                },
+                {
+                    "data_hora": "2024-04-23 16:30:00",
+                    "temp_ext": 23.98,
+                    "temp_int": 35.95,
+                    "tensao": 28.47,
+                    "luminosidade": 358.88,
+                    "razao_temp": 1.5,
+                    "energia_gerada": 56.82,
+                    "energia_esperada": 56.82
+                },
+                {
+                    "data_hora": "2024-04-23 17:00:00",
+                    "temp_ext": 21.47,
+                    "temp_int": 36.13,
+                    "tensao": 26.1,
+                    "luminosidade": 146.69,
+                    "razao_temp": 1.68,
+                    "energia_gerada": 38.07,
+                    "energia_esperada": 38.07
+                },
+                {
+                    "data_hora": "2024-04-23 17:30:00",
+                    "temp_ext": 23.7,
+                    "temp_int": 41.05,
+                    "tensao": 29.14,
+                    "luminosidade": 308.93,
+                    "razao_temp": 1.73,
+                    "energia_gerada": 35.52,
+                    "energia_esperada": 35.52
+                },
+                {
+                    "data_hora": "2024-04-23 18:00:00",
+                    "temp_ext": 20.53,
+                    "temp_int": 23.39,
+                    "tensao": 27.62,
+                    "luminosidade": 280.89,
+                    "razao_temp": 1.14,
+                    "energia_gerada": 11.37,
+                    "energia_esperada": 11.37
+                },
+                {
+                    "data_hora": "2024-04-23 18:30:00",
+                    "temp_ext": 21.71,
+                    "temp_int": 32.7,
+                    "tensao": 27.34,
+                    "luminosidade": 254.15,
+                    "razao_temp": 1.51,
+                    "energia_gerada": 126.1,
+                    "energia_esperada": 126.1
+                },
+                {
+                    "data_hora": "2024-04-23 19:00:00",
+                    "temp_ext": 22.09,
+                    "temp_int": 23.7,
+                    "tensao": 1.88,
+                    "luminosidade": 264.24,
+                    "razao_temp": 1.07,
+                    "energia_gerada": 0.32,
+                    "energia_esperada": 0.32
+                },
+                {
+                    "data_hora": "2024-04-23 19:30:00",
+                    "temp_ext": 20.92,
+                    "temp_int": 32.94,
+                    "tensao": 2.74,
+                    "luminosidade": 280.18,
+                    "razao_temp": 1.57,
+                    "energia_gerada": 11.68,
+                    "energia_esperada": 11.68
+                },
+                {
+                    "data_hora": "2024-04-23 20:00:00",
+                    "temp_ext": 24.89,
+                    "temp_int": 35.84,
+                    "tensao": 2.88,
+                    "luminosidade": 58.56,
+                    "razao_temp": 1.44,
+                    "energia_gerada": 0.74,
+                    "energia_esperada": 0.74
+                },
+                {
+                    "data_hora": "2024-04-23 20:30:00",
+                    "temp_ext": 21.2,
+                    "temp_int": 29.25,
+                    "tensao": 0.72,
+                    "luminosidade": 112.55,
+                    "razao_temp": 1.38,
+                    "energia_gerada": 2.92,
+                    "energia_esperada": 2.92
+                },
+                {
+                    "data_hora": "2024-04-23 21:00:00",
+                    "temp_ext": 24.9,
+                    "temp_int": 28.36,
+                    "tensao": 2.5,
+                    "luminosidade": 181.02,
+                    "razao_temp": 1.14,
+                    "energia_gerada": 8.71,
+                    "energia_esperada": 8.71
+                },
+                {
+                    "data_hora": "2024-04-23 21:30:00",
+                    "temp_ext": 21.05,
+                    "temp_int": 33.0,
+                    "tensao": 4.29,
+                    "luminosidade": 150.35,
+                    "razao_temp": 1.57,
+                    "energia_gerada": 9.28,
+                    "energia_esperada": 9.28
+                },
+                {
+                    "data_hora": "2024-04-23 22:00:00",
+                    "temp_ext": 21.42,
+                    "temp_int": 35.41,
+                    "tensao": 0.78,
+                    "luminosidade": 140.75,
+                    "razao_temp": 1.65,
+                    "energia_gerada": 0.33,
+                    "energia_esperada": 0.33
+                },
+                {
+                    "data_hora": "2024-04-23 22:30:00",
+                    "temp_ext": 20.3,
+                    "temp_int": 37.59,
+                    "tensao": 3.36,
+                    "luminosidade": 54.43,
+                    "razao_temp": 1.85,
+                    "energia_gerada": 9.13,
+                    "energia_esperada": 9.13
+                },
+                {
+                    "data_hora": "2024-04-23 23:00:00",
+                    "temp_ext": 23.99,
+                    "temp_int": 32.25,
+                    "tensao": 0.99,
+                    "luminosidade": 193.85,
+                    "razao_temp": 1.34,
+                    "energia_gerada": 8.62,
+                    "energia_esperada": 8.62
+                },
+                {
+                    "data_hora": "2024-04-23 23:30:00",
+                    "temp_ext": 22.11,
+                    "temp_int": 40.51,
+                    "tensao": 4.79,
+                    "luminosidade": 182.59,
+                    "razao_temp": 1.83,
+                    "energia_gerada": 10.96,
+                    "energia_esperada": 10.96
+                }
+            ]
+        }
+    ]
+}
