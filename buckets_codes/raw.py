@@ -104,11 +104,14 @@ def gerar_dados(qtd_dias):
     return dados_coletados
 
 def salvar_dados(dados, painel, setor):    
-    # inserir no json o conjunto de dados no painel e setor especificado, caso não exista, criar
-    with open('data_raw.json', 'r') as arquivo:
-        dados_json = json.load(arquivo)
+    try:
+        with open('data_raw.json', 'r') as arquivo:
+            dados_json = json.load(arquivo)
+            print("data_raw.json carregado!")
+    except FileNotFoundError:
+        dados_json = {"horus": []}
+        print("data_raw.json não encontrado, criando novo arquivo!")
         
-    # verifica se o painel já existe
     painel_existe = False
     
     for painel_json in dados_json["horus"]:
@@ -123,14 +126,11 @@ def salvar_dados(dados, painel, setor):
             "dados": []
         })
         
-    # insere os dados no painel e sensor especificado
     for painel_json in dados_json["horus"]:
         if painel_json["painel_id"] == painel:
             painel_json["dados"] = dados
             
-    # salva os dados no arquivo
     with open('data_raw.json', 'w') as arquivo:
-        # salvar informações no arquivo indetação de 4 espaços
         json.dump(dados_json, arquivo, indent=4)
         
     return True

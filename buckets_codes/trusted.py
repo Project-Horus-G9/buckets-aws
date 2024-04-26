@@ -23,7 +23,7 @@ def refinamento(dados):
         "luminosidade": dado['luminosidade'],
         "razao_temp": round(dado['temp_int'] / dado['temp_ext'], 2),
         "energia_gerada": round(dado['potencia'] * 0.8, 2),
-        "energia_esperada": round(dado['potencia'] * 0.8, 2)
+        "energia_esperada": round(dado['uv'] * 10 * 0.8, 2)
       }
 
       dados_trusted['dados'].append(sub_dados)
@@ -35,8 +35,13 @@ def refinamento(dados):
   return dados_refinados       
         
 def salvar_dados(dados):
-    with open('data_refined.json', 'r') as arquivo:
-        dados_json = json.load(arquivo)
+    try:
+        with open('data_trusted.json', 'r') as arquivo:
+            dados_json = json.load(arquivo)
+            print("data_trusted.json carregado!")
+    except FileNotFoundError:
+        dados_json = {"horus": []}
+        print("data_trusted.json não encontrado, criando novo arquivo!")
     
     for painel in dados:
         painel_existe = False
@@ -51,10 +56,10 @@ def salvar_dados(dados):
                 if painel_json['painel_id'] == painel['painel_id']:
                     painel_json['dados'] = painel['dados']
                     
-    with open('data_refined.json', 'w') as arquivo:
+    with open('data_trusted.json', 'w') as arquivo:
         json.dump(dados_json, arquivo, indent=4)
 
-    print("data_refined.json salvo!")
+    print("data_trusted.json salvo!")
 
 def main():
   

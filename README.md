@@ -1,0 +1,1 @@
+Esse repositório nósusamos para simular os dados dos sensores que queremos utilizar.
