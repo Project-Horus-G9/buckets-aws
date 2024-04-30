@@ -1,4 +1,5 @@
 import json
+import boto3  
 
 def refinamento(dados):
 
@@ -35,6 +36,9 @@ def refinamento(dados):
   return dados_refinados       
         
 def salvar_dados(dados):
+    
+    s3 = boto3.client('s3')
+    
     try:
         with open('data_trusted.json', 'r') as arquivo:
             dados_json = json.load(arquivo)
@@ -58,6 +62,14 @@ def salvar_dados(dados):
                     
     with open('data_trusted.json', 'w') as arquivo:
         json.dump(dados_json, arquivo, indent=4)
+
+    json_string = json.dumps('data_client.json')
+
+    bucket_name = 'horus-client'
+    object_key = 'data_client.json'
+    
+    s3.put_object(Bucket=bucket_name, Key=object_key, Body=json_string)
+
 
     print("data_trusted.json salvo!")
 

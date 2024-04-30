@@ -1,4 +1,5 @@
 import json
+import boto3
 
 def filtro(dados):
     # horario: 5h as 19h
@@ -38,6 +39,9 @@ def filtro(dados):
     return dados_filtrados
 
 def salvar_dados(dados):
+
+    s3 = boto3.client('s3')
+
     try:
         with open('data_client.json', 'r') as arquivo:
             dados_json = json.load(arquivo)
@@ -68,6 +72,14 @@ def salvar_dados(dados):
                     
     with open('data_client.json', 'w') as arquivo:
         json.dump(dados_json, arquivo, indent=4)
+
+    json_string = json.dumps('data_client.json')
+
+    bucket_name = 'horus-client'
+    object_key = 'data_client.json'
+    
+    s3.put_object(Bucket=bucket_name, Key=object_key, Body=json_string)
+
 
     print("data_client.json salvo!")
 
