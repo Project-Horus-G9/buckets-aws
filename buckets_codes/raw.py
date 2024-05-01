@@ -156,7 +156,7 @@ def salvar_dados(dados, painel, setor):
     with open('data_raw.json', 'w') as arquivo:
         json.dump(dados_json, arquivo, indent=4)
     
-    json_string = json.dumps('data_raw.json')
+    json_string = json.dumps(dados_json)
 
     bucket_name = 'set-raw'
     object_key = 'data_raw.json'

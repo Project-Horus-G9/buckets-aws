@@ -80,6 +80,9 @@ def salvar_dados(dados):
     print("data_client.json salvo!")
 
 def main():
+    
+    session = boto3.Session()
+    
     with open('data_trusted.json', 'r') as arquivo:
         dados_json = json.load(arquivo)
         

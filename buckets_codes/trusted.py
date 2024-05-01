@@ -69,7 +69,7 @@ def salvar_dados(dados):
 
     json_string = json.dumps('data_client.json')
 
-    bucket_name = 'horus-client'
+    bucket_name = 'tote-trusted'
     object_key = 'data_client.json'
     
     s3.put_object(Bucket=bucket_name, Key=object_key, Body=json_string)
@@ -78,6 +78,8 @@ def salvar_dados(dados):
     print("data_trusted.json salvo!")
 
 def main():
+  
+  session = boto3.Session()
   
   with open('data_raw.json', 'r') as file:
     dados_raw = json.load(file)
