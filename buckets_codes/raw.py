@@ -3,6 +3,8 @@ import time
 import random
 import boto3  
 
+
+
 def gerar_dados(qtd_dias):
     
     print("Gerando dados")
@@ -164,6 +166,9 @@ def salvar_dados(dados, painel, setor):
     return True
 
 def main():
+    
+    session = boto3.Session()
+    
     # gera os dados
     dados = gerar_dados(7)
     
