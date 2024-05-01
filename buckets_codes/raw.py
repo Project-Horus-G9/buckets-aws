@@ -15,16 +15,25 @@ def gerar_dados(qtd_dias):
         "tensao": 0,
         "uv": 0,
         "luminosidade": 0,
-        "potencia": 0
+        "potencia": 0,
+        "ceu": ""
     }
     
     dados_coletados = []
+    
+    possiveis_ceus = ["ceu limpo", "algumas nuvens", "chuva leve", "nublado", "nuvens dispersas"]
     
     # data inicial - qtd_dias atrás
     data_inicial = time.mktime(time.strptime(time.strftime('%Y-%m-%d'), '%Y-%m-%d')) - 86400 * qtd_dias
     
     for dia in range(qtd_dias):
+        
+        ceu_dia = random.choice(possiveis_ceus)
+        
         for meia_hora in range(48):
+            
+            dado["ceu"] = ceu_dia
+            
             dado["data_hora"] = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(data_inicial))            
             
             mes = int(time.strftime('%m', time.localtime(data_inicial)))
@@ -71,10 +80,7 @@ def gerar_dados(qtd_dias):
             # uv
             dado["uv"] = round(random.uniform(0, 15), 2)
             
-            # luminosidade
-            nublado = random.randint(1, 5)
-            
-            if nublado == 1:
+            if dado["ceu"] == "nubladp" or dado["ceu"] == "algumas nuvens":
                 if hora in range(6, 18):
                     dado["luminosidade"] = round(random.uniform(100, 200), 2)
                 elif hora in range(18, 20) or hora in range(4, 6):
@@ -100,6 +106,17 @@ def gerar_dados(qtd_dias):
             
             # coloca o conjunto de dados na lista
             dados_coletados.append(dado)
+            
+            dado = {
+                "data_hora": "",
+                "temp_ext": 0,
+                "temp_int": 0,
+                "tensao": 0,
+                "uv": 0,
+                "luminosidade": 0,
+                "potencia": 0,
+                "ceu": ""
+            }
             
     # retorna os dados coletados
     return dados_coletados

@@ -9,7 +9,6 @@ def filtro(dados):
     # tensao > 5
     
     dados_filtrados = []
-    
         
     for painel in dados['horus']:
 
@@ -59,15 +58,12 @@ def salvar_dados(dados):
                 break
             
         if not painel_existe:
-            dados_json["horus"].append({
-                "painel_id": painel["painel_id"],
-                "setor": painel["setor"],
-                "dados": []
-            })
+            dados_json['horus'].append(painel)
             
-        for painel_json in dados_json["horus"]:
-            if painel_json["painel_id"] == painel["painel_id"]:
-                painel_json["dados"].append(painel["dados"])
+        else:
+            for painel_json in dados_json['horus']:
+                if painel_json['painel_id'] == painel['painel_id']:
+                    painel_json['dados'] = painel['dados']
                 
                     
     with open('data_client.json', 'w') as arquivo:

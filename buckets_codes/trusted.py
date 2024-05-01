@@ -22,6 +22,7 @@ def refinamento(dados):
         "temp_int": dado['temp_int'],
         "tensao": dado['tensao'],
         "luminosidade": dado['luminosidade'],
+        "ceu": dado['ceu'],
         "razao_temp": round(dado['temp_int'] / dado['temp_ext'], 2),
         "energia_gerada": round(dado['potencia'] * 0.8, 2),
         "energia_esperada": round(dado['uv'] * 10 * 0.8, 2)
@@ -49,12 +50,15 @@ def salvar_dados(dados):
     
     for painel in dados:
         painel_existe = False
+        
         for painel_json in dados_json['horus']:
             if painel_json['painel_id'] == painel['painel_id']:
                 painel_existe = True
                 break
+              
         if not painel_existe:
             dados_json['horus'].append(painel)
+            
         else:
             for painel_json in dados_json['horus']:
                 if painel_json['painel_id'] == painel['painel_id']:
