@@ -156,18 +156,20 @@ def salvar_dados(dados, painel, setor):
     with open('data_raw.json', 'w') as arquivo:
         json.dump(dados_json, arquivo, indent=4)
     
-    salvar_s3(dados_json)
+    salvar_s3()
 
-def salvar_s3(dados):
+def salvar_s3():
     
     print("Salvando dados no S3")
         
     s3 = boto3.client('s3')
     
+    body = open('data_raw.json', 'rb')
+    
     bucket_name = 'set-raw'
     object_key = 'data_raw.json'
     
-    s3.put_object(Bucket=bucket_name, Key=object_key, Body=dados)
+    s3.put_object(Bucket=bucket_name, Key=object_key, Body=body)
     
     print("Dados salvos no S3")
     
