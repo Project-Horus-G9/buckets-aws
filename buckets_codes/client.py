@@ -37,63 +37,89 @@ def filtro(dados):
     
     return dados_filtrados
 
-def salvar_dados(dados):
+def salvar_dados(dados, ambiente):
 
-    try:
-        with open('data_client.json', 'r') as arquivo:
-            dados_json = json.load(arquivo)
-            print("data_client.json carregado!")
-    except FileNotFoundError:
-        dados_json = {"horus": []}
-        print("data_client.json não encontrado, criando novo arquivo!")
+    if ambiente == "local":
+        print("Salvando dados localmente")
+        
+        with open('data_client.json', 'w') as arquivo:
+            json.dump(dados, arquivo, indent=4)
+            
+        print("Dados salvos localmente")
+        
+    elif ambiente == "s3":
+        
+        print("Salvando dados no S3")
+        
+        s3 = boto3.client('s3')
+        
+        body = json.dumps(dados)
+        
+        bucket_name = 'horus-client'
+        object_key = 'data_client.json'
+        
+        s3.put_object(Bucket=bucket_name, Key=object_key, Body=body)
+        
+        print("Dados salvos no S3")
+    
+def estrutura_dados(dados):
+    
+    dados_estruturados = {"horus": []}
     
     for painel in dados:
         painel_existe = False
         
-        for painel_json in dados_json["horus"]:
-            if painel_json["painel_id"] == painel["painel_id"]:
+        for painel_json in dados_estruturados['horus']:
+            if painel_json['painel_id'] == painel['painel_id']:
                 painel_existe = True
                 break
-            
+              
         if not painel_existe:
-            dados_json['horus'].append(painel)
+            dados_estruturados['horus'].append(painel)
             
         else:
-            for painel_json in dados_json['horus']:
+            for painel_json in dados_estruturados['horus']:
                 if painel_json['painel_id'] == painel['painel_id']:
                     painel_json['dados'] = painel['dados']
-                
                     
-    with open('data_client.json', 'w') as arquivo:
-        json.dump(dados_json, arquivo, indent=4)
+    return dados_estruturados
 
-    print("data_client.json salvo!")
-
-def salvar_s3():
+def puxar_dados(ambiente):
+    
+    if ambiente == 'local':
         
-    print("Salvando dados no S3")
+        with open('data_trusted.json', 'r') as arquivo:
+            dados_json = json.load(arquivo)
+            
+        return dados_json
+    
+    elif ambiente == 's3':
         
-    s3 = boto3.client('s3')
-    
-    body = open('data_client.json', 'rb')
-    
-    bucket_name = 'horus-client'
-    object_key = 'data_client.json'
-    
-    s3.put_object(Bucket=bucket_name, Key=object_key, Body=body)
-    
-    print("Dados salvos no S3")
+        s3 = boto3.client('s3')
+        
+        bucket_name = 'tote-trusted'
+        object_key = 'data_trusted.json'
+        
+        response = s3.get_object(Bucket=bucket_name, Key=object_key)
+        
+        dados_json = json.loads(response['Body'].read().decode('utf-8'))
+        
+        return dados_json
 
 def main():
     
     session = boto3.Session()
     
-    with open('data_trusted.json', 'r') as arquivo:
-        dados_json = json.load(arquivo)
-        
-    dados_filtrados = filtro(dados_json)
+    ambiente = "local"
+    # ambiente = "s3"
     
-    salvar_dados(dados_filtrados)
+    dados_trusted = puxar_dados(ambiente)
+        
+    dados_filtrados = filtro(dados_trusted)
+    
+    dados_estruturados = estrutura_dados(dados_filtrados)
+    
+    salvar_dados(dados_estruturados)
     
 if __name__ == "__main__":
     main()

@@ -34,66 +34,88 @@ def refinamento(dados):
   
   print("Refinamento pronto")
 
-  return dados_refinados       
-        
-def salvar_dados(dados):
-    
-    try:
-        with open('data_trusted.json', 'r') as arquivo:
-            dados_json = json.load(arquivo)
-            print("data_trusted.json carregado!")
-    except FileNotFoundError:
-        dados_json = {"horus": []}
-        print("data_trusted.json não encontrado, criando novo arquivo!")
+  return dados_refinados   
+
+def estrutura_dados(dados):
+    dados_estruturados = {"horus": []}
     
     for painel in dados:
         painel_existe = False
         
-        for painel_json in dados_json['horus']:
+        for painel_json in dados_estruturados['horus']:
             if painel_json['painel_id'] == painel['painel_id']:
                 painel_existe = True
                 break
               
         if not painel_existe:
-            dados_json['horus'].append(painel)
+            dados_estruturados['horus'].append(painel)
             
         else:
-            for painel_json in dados_json['horus']:
+            for painel_json in dados_estruturados['horus']:
                 if painel_json['painel_id'] == painel['painel_id']:
                     painel_json['dados'] = painel['dados']
                     
-    with open('data_trusted.json', 'w') as arquivo:
-        json.dump(dados_json, arquivo, indent=4)
-
-    print("data_trusted.json salvo!")
-
-def salvar_s3():
+    return dados_estruturados
+     
+def salvar_dados(dados, ambiente):
+    
+    if ambiente == 'local':
       
-  print("Salvando dados no S3")
-      
-  s3 = boto3.client('s3')
-  
-  body = open('data_trusted.json', 'rb')
-  
-  bucket_name = 'tote-trusted'
-  object_key = 'data_trusted.json'
-  
-  s3.put_object(Bucket=bucket_name, Key=object_key, Body=body)
+      print("Salvando dados no arquivo local")
+                        
+      with open('data_trusted.json', 'w') as arquivo:
+          json.dump(dados, arquivo, indent=4)
 
-  print("data_trusted.json salvo!")
+      print("data_trusted.json salvo!")
+      
+    elif ambiente == 's3':
+      print("Salvando dados no S3")
+      
+      s3 = boto3.client('s3')
+
+      body = json.dumps(dados)
+
+      bucket_name = 'tote-trusted'
+      object_key = 'data_trusted.json'
+
+      s3.put_object(Bucket=bucket_name, Key=object_key, Body=body)
+
+      print("data_trusted.json salvo!")
+
+def puxar_dados(ambiente):
+  
+  if ambiente == 'local':
+    
+    with open('data_raw.json', 'r') as arquivo:
+      dados_json = json.load(arquivo)
+      
+    return dados_json
+  
+  elif ambiente == 's3':
+    
+    s3 = boto3.client('s3')
+    
+    bucket_name = 'set-raw'
+    object_key = 'data_raw.json'
+    
+    dados_json = json.loads(s3.get_object(Bucket=bucket_name, Key=object_key)['Body'].read())
+    
+    return dados_json
 
 def main():
   
   session = boto3.Session()
   
-  with open('data_raw.json', 'r') as file:
-    dados_raw = json.load(file)
+  ambiente = 'local'
+  # ambiente = 's3'
+  
+  dados_raw = puxar_dados(ambiente)
   
   dados_refinados = refinamento(dados_raw) 
   
-  salvar_s3()
+  dados_estruturados = estrutura_dados(dados_refinados)
 
-  salvar_dados(dados_refinados)
+  salvar_dados(dados_estruturados, ambiente)
 
 if __name__ == "__main__":
   main()

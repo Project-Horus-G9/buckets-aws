@@ -7,7 +7,6 @@ def gerar_dados(qtd_dias):
     
     print("Gerando dados")
     
-    # declarando as variáveis
     dado = {
         "data_hora": "",
         "temp_ext": 0,
@@ -104,7 +103,6 @@ def gerar_dados(qtd_dias):
             if hora < 6 or hora > 18:
                 dado["potencia"] = round(dado["potencia"] * 0.1, 2)
             
-            # coloca o conjunto de dados na lista
             dados_coletados.append(dado)
             
             dado = {
@@ -118,66 +116,73 @@ def gerar_dados(qtd_dias):
                 "ceu": ""
             }
             
-    # retorna os dados coletados
     return dados_coletados
 
-def salvar_dados(dados, painel, setor):    
+def salvar_painel(dados, painel, setor):    
 
-    try:
-        with open('data_raw.json', 'r') as arquivo:
-            dados_json = json.load(arquivo)
-            print("data_raw.json carregado!")
-    except FileNotFoundError:
-        dados_json = {"horus": []}
-        print("data_raw.json não encontrado, criando novo arquivo!")
+    dados_json = {
+        "painel_id": painel,
+        "setor": setor,
+        "dados": []
+    }
         
-    painel_existe = False
-    
-    for painel_json in dados_json["horus"]:
-        if painel_json["painel_id"] == painel:
-            painel_existe = True
-            break
+    for dado in dados:
+        dados_json["dados"].append(dado)
             
-    if not painel_existe:
-        dados_json["horus"].append({
-            "painel_id": painel,
-            "setor": setor,
-            "dados": []
-        })
+    return dados_json
+
+def estrurar_dados(paineis):
+    
+    dados_estruturados = {"horus": []}
+    
+    for painel in paineis:
+        dados_estruturados["horus"].append(painel)
+                    
+    return dados_estruturados
+    
+def salvar_dados(dados, ambiente):
+    
+    if ambiente == "local":
+        print("Salvando dados localmente")
         
-    for painel_json in dados_json["horus"]:
-        if painel_json["painel_id"] == painel:
-            painel_json["dados"] = dados
+        with open('data_raw.json', 'w') as arquivo:
+            json.dump(dados, arquivo, indent=4)
             
-    with open('data_raw.json', 'w') as arquivo:
-        json.dump(dados_json, arquivo, indent=4)
-    
-def salvar_s3():
-    
-    print("Salvando dados no S3")
+        print("Dados salvos localmente")
         
-    s3 = boto3.client('s3')
-    
-    body = open('data_raw.json', 'rb')
-    
-    bucket_name = 'set-raw'
-    object_key = 'data_raw.json'
-    
-    s3.put_object(Bucket=bucket_name, Key=object_key, Body=body)
-    
-    print("Dados salvos no S3")
+    elif ambiente == "s3":
+        
+        print("Salvando dados no S3")
+            
+        s3 = boto3.client('s3')
+        
+        body = json.dumps(dados)
+        
+        bucket_name = 'set-raw'
+        object_key = 'data_raw.json'
+        
+        s3.put_object(Bucket=bucket_name, Key=object_key, Body=body)
+        
+        print("Dados salvos no S3")
     
 def main():
     
     session = boto3.Session()
     
-    # gera os dados
+    ambiente = "local"
+    # ambiente = "s3"
+    
     dados = gerar_dados(7)
     
-    # salva os dados
-    salvar_dados(dados, 1, "sul")
+    painel1 = salvar_painel(dados, 1, "sul")
+    painel2 = salvar_painel(dados, 2, "sul")
+    painel3 = salvar_painel(dados, 3, "norte")
     
-    salvar_s3()
+    paineis = [painel1, painel2, painel3]
+    
+    dados_estruturados = estrurar_dados(paineis)
+    
+    salvar_dados(dados_estruturados, ambiente)
     
     print("Dados gerados com sucesso")
     
