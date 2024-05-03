@@ -38,8 +38,6 @@ def refinamento(dados):
         
 def salvar_dados(dados):
     
-    s3 = boto3.client('s3')
-    
     try:
         with open('data_trusted.json', 'r') as arquivo:
             dados_json = json.load(arquivo)
@@ -67,15 +65,22 @@ def salvar_dados(dados):
     with open('data_trusted.json', 'w') as arquivo:
         json.dump(dados_json, arquivo, indent=4)
 
-    json_string = json.dumps('data_client.json')
-
-    bucket_name = 'tote-trusted'
-    object_key = 'data_client.json'
-    
-    s3.put_object(Bucket=bucket_name, Key=object_key, Body=json_string)
-
-
     print("data_trusted.json salvo!")
+
+def salvar_s3():
+      
+  print("Salvando dados no S3")
+      
+  s3 = boto3.client('s3')
+  
+  body = open('data_trusted.json', 'rb')
+  
+  bucket_name = 'tote-trusted'
+  object_key = 'data_trusted.json'
+  
+  s3.put_object(Bucket=bucket_name, Key=object_key, Body=body)
+
+  print("data_trusted.json salvo!")
 
 def main():
   
@@ -85,6 +90,8 @@ def main():
     dados_raw = json.load(file)
   
   dados_refinados = refinamento(dados_raw) 
+  
+  salvar_s3()
 
   salvar_dados(dados_refinados)
 

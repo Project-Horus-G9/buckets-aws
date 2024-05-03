@@ -1,9 +1,7 @@
 import json
 import time
 import random
-import boto3  
-
-
+import boto3
 
 def gerar_dados(qtd_dias):
     
@@ -125,8 +123,6 @@ def gerar_dados(qtd_dias):
 
 def salvar_dados(dados, painel, setor):    
 
-    s3 = boto3.client('s3')
-
     try:
         with open('data_raw.json', 'r') as arquivo:
             dados_json = json.load(arquivo)
@@ -156,8 +152,6 @@ def salvar_dados(dados, painel, setor):
     with open('data_raw.json', 'w') as arquivo:
         json.dump(dados_json, arquivo, indent=4)
     
-    salvar_s3()
-
 def salvar_s3():
     
     print("Salvando dados no S3")
@@ -182,6 +176,8 @@ def main():
     
     # salva os dados
     salvar_dados(dados, 1, "sul")
+    
+    salvar_s3()
     
     print("Dados gerados com sucesso")
     
