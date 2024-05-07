@@ -1,9 +1,13 @@
 import json
 import time
 import random
+import matplotlib.pyplot as plt
+from memory_profiler import memory_usage
 import boto3
 
 def gerar_dados(qtd_dias, paineis):
+
+    tempo_inicio_gerar = time.time()
     
     print("Gerando dados")
     
@@ -125,10 +129,14 @@ def gerar_dados(qtd_dias, paineis):
                 painel["dados"].append(dado)
                 
         dados_coletados.append(painel)
+
+        tempo_fim_gerar = time.time()
+
+        tempo_total_gerar = tempo_fim_gerar - tempo_inicio_gerar
         
     print("Dados gerados")
     
-    return dados_coletados
+    return dados_coletados, tempo_total_gerar
 
 def salvar_painel(dados, painel, setor):    
 
@@ -153,6 +161,8 @@ def estrurar_dados(paineis):
     return dados_estruturados
     
 def salvar_dados(dados, ambiente):
+
+    tempo_inicio_salvar = time.time()
     
     if ambiente == "local":
         print("Salvando dados localmente")
@@ -174,25 +184,64 @@ def salvar_dados(dados, ambiente):
         object_key = 'data_raw.json'
         
         s3.put_object(Bucket=bucket_name, Key=object_key, Body=body)
-        
+
         print("Dados salvos no S3")
+        
+    tempo_fim_salvar = time.time()
+
+    tempo_total_salvar = tempo_fim_salvar - tempo_inicio_salvar
+
+    return tempo_total_salvar
     
 def main():
-    
+
     session = boto3.Session()
     
-    # ambiente = "local"
-    ambiente = "s3"
+    ambiente = "local"
+    # ambiente = "s3"
     
-    paineis = ["painel 1", "painel 2", "painel 3"]
+    paineis = []
+
+    for painel in range(10000):
+        paineis.append("painel " + str(painel))
     
-    dados = gerar_dados(7, paineis)
+    dados, tempo_total_gerar = gerar_dados(7, paineis)
+
+    memoria_usada_gerar = memory_usage((gerar_dados, (7, paineis)))
         
     dados_estruturados = estrurar_dados(dados)
-    
-    salvar_dados(dados_estruturados, ambiente)
+
+    tempo_total_salvar = salvar_dados(dados_estruturados, ambiente)
+
+    memoria_usada_salvar = memory_usage((salvar_dados, (dados_estruturados, ambiente)))
     
     print("Dados gerados com sucesso")
+
+    print("Tempo total para gerar dados: ", tempo_total_gerar)
+    print("Tempo total para salvar dados: ", tempo_total_salvar)
+    print("Memória usada para gerar dados: ", memoria_usada_gerar)
+    print("Memória usada para salvar dados: ", memoria_usada_salvar)
+
+    bar_width = 0.2
+
+    plt.figure(figsize=(6, 4))
+    plt.bar(["Gerar dados", "Salvar dados"], [memoria_usada_gerar[0], memoria_usada_salvar[0]], width=bar_width)
+    
+    plt.xlabel("Operação")
+    plt.ylabel("Memória (MB)")
+    plt.title("Uso de memória para gerar e salvar dados")
+    plt.show()
+
+    plt.figure(figsize=(6, 4))
+    plt.bar(["Gerar dados", "Salvar dados"], [tempo_total_gerar, tempo_total_salvar], width=bar_width)
+    plt.xlabel("Operação")
+    plt.ylabel("Tempo (s)")
+    plt.title("Tempo para gerar e salvar dados")
+    plt.show()
+
+    
+
+
     
     return True
 
