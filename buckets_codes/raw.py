@@ -119,7 +119,7 @@ def gerar_dados(qtd_dias, paineis):
                 
                 dado["potencia"] = round(random.uniform(40, potencia_maxima_NOCT * percentual_captacao), 2)
                 
-                if hora < 6 or hora > 18:
+                if hora < 8 or hora > 16:
                     dado["potencia"] = round(dado["potencia"] * 0.1, 2)
                 
                 painel["dados"].append(dado)
