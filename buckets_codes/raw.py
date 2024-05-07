@@ -181,8 +181,8 @@ def main():
     
     session = boto3.Session()
     
-    ambiente = "local"
-    # ambiente = "s3"
+    # ambiente = "local"
+    ambiente = "s3"
     
     paineis = ["painel 1", "painel 2", "painel 3"]
     
