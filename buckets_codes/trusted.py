@@ -24,8 +24,8 @@ def refinamento(dados):
         "luminosidade": dado['luminosidade'],
         "ceu": dado['ceu'],
         "razao_temp": round(dado['temp_int'] / dado['temp_ext'], 2),
-        "energia_gerada": round(dado['potencia'] * 0.8, 2),
-        "energia_esperada": round(dado['uv'] * 10 * 0.8, 2)
+        "energia_gerada": round(dado['uv'] * 10 * 0.8, 2),
+        "energia_esperada": round(dado['potencia'] * 0.8, 2)
       }
 
       dados_trusted['dados'].append(sub_dados)
@@ -106,8 +106,8 @@ def main():
   
   session = boto3.Session()
   
-  # ambiente = 'local'
-  ambiente = 's3'
+  ambiente = 'local'
+  # ambiente = 's3'
   
   dados_raw = puxar_dados(ambiente)
   

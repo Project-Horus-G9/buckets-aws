@@ -50,44 +50,55 @@ def gerar_dados(qtd_dias, paineis):
                 
                 # temperatura externa
                 if mes in [12, 1, 2]:
-                    if hora in range(10, 16):
+                    if hora in range(8, 16):
                         dado["temp_ext"] = round(random.uniform(30, 35), 2)
                     else:
                         dado["temp_ext"] = round(random.uniform(25, 30), 2)
                 elif mes in [3, 4, 5]:
-                    if hora in range(10, 16):
+                    if hora in range(8, 16):
                         dado["temp_ext"] = round(random.uniform(25, 30), 2)
                     else:
                         dado["temp_ext"] = round(random.uniform(20, 25), 2)
                 elif mes in [6, 7, 8]:
-                    if hora in range(10, 16):
+                    if hora in range(8, 16):
                         dado["temp_ext"] = round(random.uniform(20, 25), 2)
                     else:
                         dado["temp_ext"] = round(random.uniform(15, 20), 2)
                 else:
-                    if hora in range(10, 16):
+                    if hora in range(8, 16):
                         dado["temp_ext"] = round(random.uniform(25, 30), 2)
                     else:
                         dado["temp_ext"] = round(random.uniform(20, 25), 2)
                         
                 # temperatura interna
-                if hora in range(10, 16):
+                if hora in range(8, 16):
                     dado["temp_int"] = round(random.uniform(dado["temp_ext"], dado["temp_ext"] + 23), 2)
                 else:
                     dado["temp_int"] = round(random.uniform(dado["temp_ext"], dado["temp_ext"] + 19), 2)
                     
                 # tensão
-                if hora in range(10, 16):
+                if hora in range(8, 16):
                     dado["tensao"] = round(random.uniform(39, 40), 2)
-                elif hora in range(16, 19) or hora in range(6, 10):
+                elif hora in range(16, 19) or hora in range(6, 8):
                     dado["tensao"] = round(random.uniform(24, 30), 2)
                 else:
                     dado["tensao"] = round(random.uniform(0, 5), 2)
                 
                 # uv
-                dado["uv"] = round(random.uniform(0, 15), 2)
+                if hora in range(8, 16):
+                    ruido = 0.5
+                    uv_indice = 5
+                else:
+                    ruido = 0.1
+                    uv_indice = 0.5
+                    
+                uv_indice += random.uniform(-ruido, ruido)
+                uv_indice = max(0, uv_indice)
                 
-                if dado["ceu"] == "nubladp" or dado["ceu"] == "algumas nuvens":
+                dado["uv"] = round(uv_indice, 2)                 
+                
+                # luminosidade
+                if dado["ceu"] == "nublado" or dado["ceu"] == "algumas nuvens":
                     if hora in range(6, 18):
                         dado["luminosidade"] = round(random.uniform(100, 200), 2)
                     elif hora in range(18, 20) or hora in range(4, 6):
@@ -103,10 +114,10 @@ def gerar_dados(qtd_dias, paineis):
                         dado["luminosidade"] = round(random.uniform(100, 200), 2)    
                         
                 # potência
-                potencia_maxima_NOCT = 400
-                percentual_captacao = 0.4
+                potencia_maxima_NOCT = 100
+                percentual_captacao = 0.6
                 
-                dado["potencia"] = round(random.uniform(0, potencia_maxima_NOCT * percentual_captacao), 2)
+                dado["potencia"] = round(random.uniform(40, potencia_maxima_NOCT * percentual_captacao), 2)
                 
                 if hora < 6 or hora > 18:
                     dado["potencia"] = round(dado["potencia"] * 0.1, 2)
@@ -170,8 +181,8 @@ def main():
     
     session = boto3.Session()
     
-    # ambiente = "local"
-    ambiente = "s3"
+    ambiente = "local"
+    # ambiente = "s3"
     
     paineis = ["painel 1", "painel 2", "painel 3"]
     
