@@ -119,7 +119,7 @@ def main():
     
     dados_estruturados = estrutura_dados(dados_filtrados)
     
-    salvar_dados(dados_estruturados)
+    salvar_dados(dados_estruturados, ambiente)
     
 if __name__ == "__main__":
     main()
