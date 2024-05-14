@@ -185,12 +185,12 @@ Resources:
   Bucket1:
     Type: "AWS::S3::Bucket"
     Properties:
-      BucketName: "set-raw"
+      BucketName: "set-raw-api"
   Bucket2:
     Type: "AWS::S3::Bucket"
     Properties:
-      BucketName: "tote-trusted"
+      BucketName: "tote-trusted-api"
   Bucket3:
     Type: "AWS::S3::Bucket"
     Properties:
-      BucketName: "horus-client"
+      BucketName: "horus-client-api"
