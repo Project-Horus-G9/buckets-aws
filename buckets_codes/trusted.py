@@ -106,8 +106,8 @@ def main():
   
   session = boto3.Session()
 
-  # ambiente = "local"
-  ambiente = "s3"
+  ambiente = "local"
+  # ambiente = "s3"
   
   dados_raw = puxar_dados(ambiente)
   

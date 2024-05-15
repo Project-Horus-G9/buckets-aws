@@ -238,10 +238,6 @@ def main():
     plt.ylabel("Tempo (s)")
     plt.title("Tempo para gerar e salvar dados")
     plt.show()
-
-    
-
-
     
     return True
 
