@@ -8,7 +8,6 @@ import service.sendEmail as sd
 import os
 from datetime import datetime, timedelta
 from azure.iot.device import IoTHubDeviceClient, Message
-from dotenv import load_dotenv
 
 def gerar_potencia():
     horas_do_dia = np.linspace(0, 24, 100)
@@ -117,11 +116,9 @@ def envio_azure(dados_hora):
 
 
 def gerar_dados(num_paineis):
-    
-    load_dotenv()
 
-    connection_string = os.getenv('CONNECTION_STR')
-    queue_name = os.getenv('QUEUE_NAME')
+    connection_string = os.environ.get('CONNECTION_STR')
+    queue_name = os.environ.get('QUEUE_NAME')
     
     dados = {}
     potencia_captada = gerar_potencia()
@@ -177,13 +174,31 @@ def gerar_dados(num_paineis):
 
 def salvar_dados_json(num_paineis):
     dados = gerar_dados(num_paineis)
-    with open('dados_gerados.json', 'w') as arquivo:
+    num = len([name for name in os.listdir('dados_gerados') if name.endswith(".json")])
+    with open('dados_gerados/dados' + str(num) + '.json', 'w') as arquivo:
         json.dump(dados, arquivo, indent=4)
 
     print("Dados salvos com sucesso em 'dados_gerados.json'.")
 
-def main():   
-    salvar_dados_json(4)
+def pegar_env():
+    with open("config.env") as f:
+        for line in f:
+            if line.strip():
+                if not line.startswith("#"):  
+                    key = line.split('=')[0]
+                    if len(line.split('=')) > 2:
+                        value = '='.join(line.split('=')[1:]).strip()
+                    else:
+                        value = line.split('=')[1].strip()
+                        
+                    if key in os.environ:
+                        print(f"Key {key} already exists in environment variables")
+                    if key is None or value is None:
+                        print("Key or value is None")
+                    else:
+                        os.environ[key] = value
 
-if "__name__" == "__main__":
-    main()
+if __name__ == "__main__":
+    pegar_env()
+    
+    salvar_dados_json(4)

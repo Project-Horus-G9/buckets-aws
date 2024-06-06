@@ -35,8 +35,8 @@ if __name__ == '__main__':
     
     load_dotenv()
 
-    connection_string = os.getenv('CONNECTION_STR')
-    queue_name = os.getenv('QUEUE_NAME')
+    connection_string = os.environ.get('CONNECTION_STR')
+    queue_name = os.environ.get('QUEUE_NAME')
     
     resultado = send_message(connection_string, queue_name)
     print(resultado)

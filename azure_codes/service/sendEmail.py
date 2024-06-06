@@ -8,10 +8,10 @@ def enviar_email(corpo):
     
     load_dotenv()
 
-    sender_email = os.getenv('SENDER_EMAIL')
-    smtp_server = os.getenv('SMTP_SERVER')
-    smtp_port = os.getenv('SMTP_PORT')
-    smtp_password = os.getenv('SMTP_PASSWORD')
+    sender_email = os.environ.get('SENDER_EMAIL')
+    smtp_server = os.environ.get('SMTP_SERVER')
+    smtp_port = os.environ.get('SMTP_PORT')
+    smtp_password = os.environ.get('SMTP_PASSWORD')
 
     receiver_email = 'marco.magalhaes@sptech.school'
     subject = 'Alerta de temperatura'
