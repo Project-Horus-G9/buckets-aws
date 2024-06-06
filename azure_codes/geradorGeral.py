@@ -3,8 +3,8 @@ import random
 import json
 import uuid
 import time
-import serviceBus as sb
-import sendEmail as sd
+import service.serviceBus as sb
+import service.sendEmail as sd
 import os
 from datetime import datetime, timedelta
 from azure.iot.device import IoTHubDeviceClient, Message
