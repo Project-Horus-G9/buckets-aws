@@ -1,6 +1,7 @@
 from azure.servicebus import ServiceBusClient
 from azure.servicebus import ServiceBusMessage
-
+import os
+from dotenv import load_dotenv
 
 def send_message(CONNECTION_STR, QUEUE_NAME):
     servicebus_client = ServiceBusClient.from_connection_string(conn_str=CONNECTION_STR)
@@ -30,9 +31,14 @@ def receiver_message(CONNECTION_STR, QUEUE_NAME):
 
     return retorno
 
-
 if __name__ == '__main__':
-    resultado = send_message(CONNECTION_STR, QUEUE_NAME)
+    
+    load_dotenv()
+
+    connection_string = os.getenv('CONNECTION_STR')
+    queue_name = os.getenv('QUEUE_NAME')
+    
+    resultado = send_message(connection_string, queue_name)
     print(resultado)
 
-    print(receiver_message(CONNECTION_STR, QUEUE_NAME))
+    print(receiver_message(connection_string, queue_name))

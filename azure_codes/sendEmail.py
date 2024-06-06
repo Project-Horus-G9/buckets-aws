@@ -1,8 +1,17 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import os
+from dotenv import load_dotenv
 
 def enviar_email(corpo):
+    
+    load_dotenv()
+
+    sender_email = os.getenv('SENDER_EMAIL')
+    smtp_server = os.getenv('SMTP_SERVER')
+    smtp_port = os.getenv('SMTP_PORT')
+    smtp_password = os.getenv('SMTP_PASSWORD')
 
     receiver_email = 'marco.magalhaes@sptech.school'
     subject = 'Alerta de temperatura'
@@ -30,6 +39,3 @@ def enviar_email(corpo):
         print(f"Houve um erro: {e}")
     finally:
         print("-------------")
-
-
-

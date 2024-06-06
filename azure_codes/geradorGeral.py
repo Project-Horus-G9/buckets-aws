@@ -1,13 +1,14 @@
 import numpy as np
 import random
 import json
-from datetime import datetime, timedelta
 import uuid
 import time
-from azure.iot.device import IoTHubDeviceClient, Message
 import serviceBus as sb
 import sendEmail as sd
-
+import os
+from datetime import datetime, timedelta
+from azure.iot.device import IoTHubDeviceClient, Message
+from dotenv import load_dotenv
 
 def gerar_potencia():
     horas_do_dia = np.linspace(0, 24, 100)
@@ -116,6 +117,12 @@ def envio_azure(dados_hora):
 
 
 def gerar_dados(num_paineis):
+    
+    load_dotenv()
+
+    connection_string = os.getenv('CONNECTION_STR')
+    queue_name = os.getenv('QUEUE_NAME')
+    
     dados = {}
     potencia_captada = gerar_potencia()
     voltagem = gerar_voltagem()
@@ -158,17 +165,15 @@ def gerar_dados(num_paineis):
                 })
 
             if alerta:
-                sb.send_message(CONNECTION_STR, QUEUE_NAME)
+                sb.send_message(connection_string, queue_name)
                 print("Enviando alerta")
-                mensagem = str(sb.receiver_message(CONNECTION_STR, QUEUE_NAME))
+                mensagem = str(sb.receiver_message(connection_string, queue_name))
                 sd.enviar_email(mensagem)
 
             print(dados_hora)
             envio_azure(dados_hora)
             time.sleep(2)
-
     return dados
-
 
 def salvar_dados_json(num_paineis):
     dados = gerar_dados(num_paineis)
@@ -177,5 +182,8 @@ def salvar_dados_json(num_paineis):
 
     print("Dados salvos com sucesso em 'dados_gerados.json'.")
 
+def main():   
+    salvar_dados_json(4)
 
-salvar_dados_json(4)
+if "__name__" == "__main__":
+    main()
