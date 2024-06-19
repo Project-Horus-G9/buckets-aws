@@ -1,14 +1,18 @@
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 import json
+import dataAtual as da
 
-def coleta_de_dados(connect_str,container_name,blob_name,download_file_path):
+def coleta_de_dados():
     try:
-        dataAtual = 
-        blob_service_client = BlobServiceClient.from_connection_string(connect_str)
-        container_client = blob_service_client.get_container_client(container_name)
-        blob_client = container_client.get_blob_client("hub-horus/02/2024/06/14/18/45.json")
 
-        # Baixar blob
+        # essa conection string é relacionada aos containers ou seja para pegar é só acessar storage account e ir em acess keys
+        blob_service_client = BlobServiceClient.from_connection_string("")
+        container_client = blob_service_client.get_container_client("horus-container")
+        blob_client = container_client.get_blob_client("hub-horus/02/2024/06/16/00/41.json")
+        # blob_client = container_client.get_blob_client("hub-horus/02/2024/06/"+ str(da.dia) + "/" + str(da.hora) + "/" + str(da.minuto) + ".json")
+        download_file_path = "../azure_codes/dados.json"
+        blob_name = "dados_horus"
+
         with open(download_file_path, "wb") as download_file:
             download_file.write(blob_client.download_blob().readall())
 
