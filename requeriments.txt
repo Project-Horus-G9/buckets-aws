@@ -1,6 +1,0 @@
-numpy
-azure-iot-device
-azure-servicebus
-python-dotenv
-Flask
-APScheduler
